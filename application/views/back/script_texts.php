@@ -1,0 +1,45 @@
+<script>
+	var base_url = "<?php echo base_url(); ?>"; 
+	var dss = "<?php echo translate("успешно удален"); ?>";
+	var cncle = "<?php echo translate("отменен"); ?>";
+	var cnl = "<?php echo translate("отмена"); ?>";
+	var req = "<?php echo translate("обязательно"); ?>";
+	var mbn = "<?php echo translate("должен быть числом"); ?>";
+	var mbe = "<?php echo translate("Адрес эл. почты должен быть действительным"); ?>";
+	var sv = "<?php echo translate("сохранить"); ?>";
+	var ppus = "<?php echo translate("продукт опубликован!"); ?>";
+	var pups = "<?php echo translate("продукт не опубликован!"); ?>";
+	var pfe = "<?php echo translate("продукт представлен!"); ?>";
+	var pufe = "<?php echo translate("родукт не представлен!"); ?>";
+	var ptd = "<?php echo translate("продукт в сегодняшней сделке!"); ?>";
+	var ptnd = "<?php echo translate("товар снят с сегодняшней сделки!"); ?>";
+	var spus = "<?php echo translate("слайдер опубликован!"); ?>";
+	var supus = "<?php echo translate("слайдер не опубликован!"); ?>";
+	var papus = "<?php echo translate("страница опубликована!"); ?>";
+	var paupus = "<?php echo translate("страница не опубликована!"); ?>";
+	var ntsen = "<?php echo translate("звук уведомления включен!"); ?>";
+	var ntsds = "<?php echo translate("звук уведомлений отключен!"); ?>";
+	var glen = "<?php echo translate("вход в google включен!"); ?>";
+	var glds = "<?php echo translate("вход в google отключен!"); ?>";
+	var flen = "<?php echo translate("вход в facebook включен!"); ?>";
+	var flds = "<?php echo translate("вход в facebook выключен!"); ?>";
+	var pplds = "<?php echo translate("оплата через PayPal отключена!"); ?>";
+	var pplen = "<?php echo translate("оплата через PayPal включена!"); ?>";
+	var c2_e ="<?php echo translate("оплата двумя чекаут включена!"); ?>";
+	var c2_d ="<?php echo translate("оплата двумя чекаут выключена!"); ?>";
+	var vp_e ="<?php echo translate("Оплата voguePay включена!"); ?>";
+	var vp_d ="<?php echo translate("Платеж voguePay отключен!"); ?>";
+	var s_e = "<?php echo translate("слайдер включен!"); ?>";
+	var s_d = "<?php echo translate("слайдер отключен!"); ?>";
+	var su_e = "<?php echo translate("успешно включен!"); ?>";
+	var su_d = "<?php echo translate("успешно отключен!"); ?>";
+	var c_e = "<?php echo translate("оплата наличными!"); ?>";
+	var c_d = "<?php echo translate("оплата наличными отключена!"); ?>";
+	var enb = "<?php echo translate("включено!"); ?>";
+	var dsb = "<?php echo translate("отключен!"); ?>";
+	var gae = "<?php echo translate("Google Analytics включен!"); ?>";
+	var gad = "<?php echo translate("Google Analytics выключен!"); ?>";
+	var enb_ven = "<?php echo translate("электронное письмо с уведомлением отправлено продавцу!"); ?> ";
+	var working = "<?php echo translate("working..."); ?> ";
+	
+</script>
