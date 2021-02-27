@@ -4,46 +4,46 @@
         <div class="tab-base horizontal-tab">
             <ul class="nav nav-tabs">
                 <li class="active">
-                    <a data-toggle="tab" href="#tabb-1"><?php echo translate('top_slider'); ?></a>
+                    <a data-toggle="tab" href="#tabb-1"><?php echo translate('Верхний слайдер'); ?></a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#tabb-2"><?php echo translate('home_banners'); ?></a>
+                    <a data-toggle="tab" href="#tabb-2"><?php echo translate('Домашние баннеры'); ?></a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#tabb-3"><?php echo translate('todays_deal'); ?></a>
+                    <a data-toggle="tab" href="#tabb-3"><?php echo translate('Сегодняшняя сделка'); ?></a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#tabb-4"><?php echo translate('featured_products'); ?></a>
+                    <a data-toggle="tab" href="#tabb-4"><?php echo translate('Избранные продукты'); ?></a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#tabb-10"><?php echo translate('product_bundle'); ?></a>
+                    <a data-toggle="tab" href="#tabb-10"><?php echo translate('Комплект продуктов'); ?></a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#tabb-11"><?php echo translate('customer_products'); ?></a>
+                    <a data-toggle="tab" href="#tabb-11"><?php echo translate('Продукты клиента'); ?></a>
                 </li>
                 <?php
                 if($this->crud_model->get_type_name_by_id('general_settings','58','value') == 'ok'){
                     ?>
                     <li>
-                        <a data-toggle="tab" href="#tabb-5"><?php echo translate('vendors'); ?></a>
+                        <a data-toggle="tab" href="#tabb-5"><?php echo translate('Продавцы'); ?></a>
                     </li>
                     <?php
                 }
                 ?>
                 <li>
-                    <a data-toggle="tab" href="#tabb-6"><?php echo translate('category_wise_products'); ?></a>
+                    <a data-toggle="tab" href="#tabb-6"><?php echo translate('Продукты по категориям'); ?></a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#tabb-7"><?php echo translate('blogs'); ?></a>
+                    <a data-toggle="tab" href="#tabb-7"><?php echo translate('Блоги'); ?></a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#tabb-8"><?php echo translate('special_products'); ?></a>
+                    <a data-toggle="tab" href="#tabb-8"><?php echo translate('Специальные продукты'); ?></a>
                 </li>
                 <?php
                 if($this->crud_model->get_type_name_by_id('general_settings','68','value') == 'ok'){
                     ?>
                     <li>
-                        <a data-toggle="tab" href="#tabb-9"><?php echo translate('brands'); ?></a>
+                        <a data-toggle="tab" href="#tabb-9"><?php echo translate('Бренды'); ?></a>
                     </li>
                     <?php
                 }

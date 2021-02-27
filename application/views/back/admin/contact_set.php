@@ -28,7 +28,7 @@
                 
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="demo-hor-inputemail">
-                        <?php echo translate('contact_address'); ?>
+                        <?php echo translate('Адрес'); ?>
                     </label>
                     <div class="col-sm-8">
                         <div class="col-sm-">

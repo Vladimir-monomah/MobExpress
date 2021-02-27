@@ -4610,7 +4610,7 @@ class Admin extends CI_Controller
                 $res['translation']  .=      '      <input type="hidden" name="lang" value="'.$lang.'" />';
                 $res['translation']  .=      '   </div>';
                 $res['translation']  .=      '   <div class="col-md-4">';
-                $res['translation']  .=      '       <span class="btn btn-success btn-xs btn-labeled fa fa-wrench submittera" data-wid="'.$lang.'_'.$row['word_id'].'"  data-ing="'.translate('Сохранение').'" data-msg="'.translate('Обновить!').'" >'.translate('Сохранить').'</span>';
+                $res['translation']  .=      '       <span class="btn btn-success btn-xs btn-labeled fa fa-wrench submittera" data-wid="'.$lang.'_'.$row['word_id'].'"  data-ing="'.translate('saving').'" data-msg="'.translate('upload!').'" >'.translate('save').'</span>';
                 $res['translation']  .=      '   </div>';
                 $res['translation']  .=      '</form>';
 

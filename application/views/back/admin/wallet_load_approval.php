@@ -22,20 +22,23 @@
                         <?php echo str_replace("\n\r",'<br>',$payment_info); ?>
                     </div>
                 </div>
-                <?php /* if($status !== 'paid'){ ?>
+                <?php  if($status !== 'paid'){ ?>
                     <div class="form-group">
                         <label class="col-sm-2 control-label" for="demo-hor-1"> </label>
                         <div class="col-sm-2">
-                            <h4><?php echo translate('pending'); ?></h4>
+                            <h4><?php echo translate('В ожидании'); ?></h4>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <input id="pub_<?php echo $wallet_load_id; ?>"  data-size="switchery-lg" class='sw1 form-control' name="approval" type="checkbox" value="ok" data-id='<?php echo $wallet_load_id; ?>' <?php if($status == 'paid'){ ?>checked<?php } ?> />
+                            <input id="pub_<?php echo $wallet_load_id; ?>" 
+                             data-size="switchery-lg" class='sw1 form-control'
+                              name="approval" type="checkbox" value="ok" data-id='<?php echo $wallet_load_id; ?>' 
+                              <?php if($status == 'paid'){ ?>checked<?php } ?> />
                         </div>
                         <div class="col-sm-2">
-                            <h4><?php echo translate('approve'); ?></h4>
+                            <h4><?php echo translate('Одобрить'); ?></h4>
                         </div>
                     </div>
-                <?php } */ ?>
+                <?php } ?>
             <?php } ?>
         </div>
     </form>

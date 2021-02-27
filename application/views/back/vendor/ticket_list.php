@@ -51,13 +51,17 @@
                 <td><?php echo date('d M,Y h:i:s',$row['time']); ?></td>
                 <td class="text-right">
                     <a class="btn btn-info btn-xs btn-labeled fa fa-location-arrow" data-toggle="tooltip"
-                        onclick="ajax_set_full('view','<?php echo translate('view_contact_ticket'); ?>','<?php echo translate('successfully_viewed!'); ?>','contact_ticket_view','<?php echo $row['message_thread_id']; ?>'); proceed('to_list');"
+                        onclick="ajax_set_full('view','<?php echo translate('Просмотреть контактный тикет'); ?>',
+                        '<?php echo translate('successfully_viewed!'); ?>','contact_ticket_view',
+                        '<?php echo $row['message_thread_id']; ?>'); proceed('to_list');"
                             data-original-title="Edit" data-container="body">
-                                <?php echo translate('view_ticket');?>
+                                <?php echo translate('Посмотреть билет');?>
                     </a>
-                    <a onclick="delete_confirm('<?php echo $row['message_thread_id']; ?>','<?php echo translate('really_want_to_delete_this?'); ?>')" class="btn btn-danger btn-xs btn-labeled fa fa-trash" data-toggle="tooltip"
+                    <a onclick="delete_confirm('<?php echo $row['message_thread_id']; ?>',
+                    '<?php echo translate('Действительно хотите это удалить?'); ?>')" 
+                    class="btn btn-danger btn-xs btn-labeled fa fa-trash" data-toggle="tooltip"
                         data-original-title="Delete" data-container="body">
-                            <?php echo translate('delete');?>
+                            <?php echo translate('Удалить');?>
                     </a>
                 </td>
             </tr>

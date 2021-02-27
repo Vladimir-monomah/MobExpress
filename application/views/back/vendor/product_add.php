@@ -13,13 +13,13 @@
                 <div class="panel-control" style="float: left;">
                     <ul class="nav nav-tabs">
                         <li class="active">
-                            <a data-toggle="tab" href="#product_details"><?php echo translate('product_details'); ?></a>
+                            <a data-toggle="tab" href="#product_details"><?php echo translate('Информация о продукте'); ?></a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#business_details"><?php echo translate('business_details'); ?></a>
+                            <a data-toggle="tab" href="#business_details"><?php echo translate('Бизнес детали'); ?></a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#customer_choice_options"><?php echo translate('customer_choice_options'); ?></a>
+                            <a data-toggle="tab" href="#customer_choice_options"><?php echo translate('Варианты выбора клиента'); ?></a>
                         </li>
                     </ul>
                 </div>
@@ -31,53 +31,66 @@
                     	<div id="product_details" class="tab-pane fade active in">
         
                             <div class="form-group btm_border">
-                                <h4 class="text-thin text-center"><?php echo translate('product_details'); ?></h4>                            
+                                <h4 class="text-thin text-center"><?php echo translate('Детали товара'); ?></h4>                            
                             </div>
 
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-1"><?php echo translate('product_title');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-1">
+                                    <?php echo translate('Заголовок товара');?></label>
                                 <div class="col-sm-6">
-                                    <input type="text" name="title" id="demo-hor-1" placeholder="<?php echo translate('product_title');?>" class="form-control required">
+                                    <input type="text" name="title" id="demo-hor-1" 
+                                    placeholder="<?php echo translate('Заголовк товара');?>" class="form-control required">
                                 </div>
                             </div>
                             
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-2"><?php echo translate('category');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-2">
+                                    <?php echo translate('Категория');?></label>
                                 <div class="col-sm-6">
-                                    <?php echo $this->crud_model->select_html('category','category','category_name','add','demo-chosen-select required','','digital',NULL,'get_cat'); ?>
+                                    <?php echo $this->crud_model->select_html
+                                    ('category','category','category_name','add','demo-chosen-select required','','digital',
+                                    NULL,'get_cat'); ?>
                                 </div>
                             </div>
                             
                             <div class="form-group btm_border" id="sub" style="display:none;">
-                                <label class="col-sm-4 control-label" for="demo-hor-3"><?php echo translate('sub-category');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-3">
+                                    <?php echo translate('Подкатегория');?></label>
                                 <div class="col-sm-6" id="sub_cat">
                                 </div>
                             </div>
                             
                             <div class="form-group btm_border" id="brn" style="display:none;">
-                                <label class="col-sm-4 control-label" for="demo-hor-4"><?php echo translate('brand');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-4">
+                                    <?php echo translate('Бренд');?></label>
                                 <div class="col-sm-6" id="brand">
                                 </div>
                             </div>
                             
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-5"><?php echo translate('unit');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-5">
+                                    <?php echo translate('Единицы измерения');?></label>
                                 <div class="col-sm-6">
-                                    <input type="text" name="unit" id="demo-hor-5" placeholder="<?php echo translate('unit_(e.g._kg,_pc_etc.)'); ?>" class="form-control unit required">
+                                    <input type="text" name="unit" id="demo-hor-5" 
+                                    placeholder="<?php echo translate('единицы (например, кг, шт. и т. д.)'); ?>" 
+                                    class="form-control unit required">
                                 </div>
                             </div>              
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-11"><?php echo translate('tags');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-11"><?php echo translate('Теги');?></label>
                                 <div class="col-sm-6">
-                                    <input type="text" name="tag" data-role="tagsinput" placeholder="<?php echo translate('tags');?>" class="form-control">
+                                    <input type="text" name="tag" data-role="tagsinput" 
+                                    placeholder="<?php echo translate('Теги');?>" class="form-control">
                                 </div>
                             </div>
                                             
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-12"><?php echo translate('images');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-12">
+                                    <?php echo translate('Картинка');?></label>
                                 <div class="col-sm-6">
-                                <span class="pull-left btn btn-default btn-file"> <?php echo translate('choose_file');?>
-                                    <input type="file" multiple name="images[]" onchange="preview(this);" id="demo-hor-12" class="form-control required">
+                                <span class="pull-left btn btn-default btn-file"> <?php echo translate('Выбрать файл');?>
+                                    <input type="file" multiple name="images[]" 
+                                    onchange="preview(this);" id="demo-hor-12" class="form-control required">
                                     </span>
                                     <br><br>
                                     <span id="previewImg" ></span>
@@ -85,30 +98,34 @@
                             </div>
                             
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-13"><?php echo translate('description'); ?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-13">
+                                    <?php echo translate('Описание'); ?></label>
                                 <div class="col-sm-6">
-                                    <textarea rows="9"  class="summernotes" data-height="200" data-name="description"></textarea>
+                                    <textarea rows="9"  class="summernotes" data-height="200" 
+                                    data-name="description"></textarea>
                                 </div>
                             </div>
 
                             <div class="form-group btm_border">
                                 <div class="col-sm-4"></div>
-                                <div class="col-sm-8"><small>*<?php echo translate('Write an seo friendly title within 60 characters')?></small></div>
+                                <div class="col-sm-8"><small>*
+                                    <?php echo translate('Напишите дружественный к поисковой оптимизации заголовок длиной не более 60 символов')?></small></div>
                                 <label class="col-sm-4 control-label" for="">
-                                    <?php echo translate('Seo Friendly Title');?>
+                                    <?php echo translate('Дружественные заголовок SEO');?>
                                 </label>
                                 <div class="col-sm-6">
                                     <input type="text" name="seo_title"
-                                           placeholder="<?php echo translate('Ex. Yamaha RT - Model 2020')?>"
+                                           placeholder="<?php echo translate('Ex. Yamaha RT - Model 2021')?>"
                                            class="form-control required">
                                 </div>
                                 <div class="col-sm-2"></div>
                             </div>
                             <div class="form-group btm_border">
                                 <div class="col-sm-4"></div>
-                                <div class="col-sm-8"><small>*<?php echo translate('Write an seo friendly description within 160 characters')?></small></div>
+                                <div class="col-sm-8"><small>*
+                                    <?php echo translate('Напишите дружественное к поисковой оптимизации описание длиной 160 символов')?></small></div>
                                 <label class="col-sm-4 control-label" for="">
-                                    <?php echo translate('Seo Friendly Description');?>
+                                    <?php echo translate('Описание SEO');?>
                                 </label>
                                 <div class="col-sm-6">
                                         <textarea name="seo_description"
@@ -123,10 +140,11 @@
                                 <label class="col-sm-4 control-label" for="demo-hor-inputpass"></label>
                                 <div class="col-sm-6">
                                     <h4 class="pull-left">
-                                        <i><?php echo translate('if_you_need_more_field_for_your_product_,_please_click_here_for_more...');?></i>
+                                        <i><?php echo translate
+                                        ('если вам нужно больше поля для вашего продукта, нажмите здесь, чтобы узнать больше ...');?></i>
                                     </h4>
                                     <div id="more_btn" class="btn btn-mint btn-labeled fa fa-plus pull-right">
-                                    <?php echo translate('add_more_fields');?></div>
+                                    <?php echo translate('Добавить больше полей');?></div>
                                 </div>
                             </div>
                             
@@ -134,39 +152,44 @@
                         </div>
                         <div id="business_details" class="tab-pane fade">
                             <div class="form-group btm_border">
-                                <h4 class="text-thin text-center"><?php echo translate('business_details'); ?></h4>                            
+                                <h4 class="text-thin text-center"><?php echo translate('Бизнес детали'); ?></h4>                            
                             </div>
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-6"><?php echo translate('sale_price');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-6"><?php echo translate('Цена продажи');?></label>
                                 <div class="col-sm-4">
-                                    <input type="number" name="sale_price" id="demo-hor-6" min='0' step='.01' placeholder="<?php echo translate('sale_price');?>" class="form-control required">
+                                    <input type="number" name="sale_price" id="demo-hor-6" min='0' step='.01' 
+                                    placeholder="<?php echo translate('Цена продажи');?>" class="form-control required">
                                 </div>
                                 <span class="btn"><?php echo currency('','def'); ?> / </span>
                                 <span class="btn unit_set"></span>
                             </div>
                             
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-7"><?php echo translate('purchase_price');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-7">
+                                    <?php echo translate('Цена');?></label>
                                 <div class="col-sm-4">
-                                    <input type="number" name="purchase_price" id="demo-hor-7" min='0' step='.01' placeholder="<?php echo translate('purchase_price');?>" class="form-control required">
+                                    <input type="number" name="purchase_price" id="demo-hor-7" 
+                                    min='0' step='.01' placeholder="<?php echo translate('purchase_price');?>" class="form-control required">
                                 </div>
                                 <span class="btn"><?php echo currency('','def'); ?> / </span>
                                 <span class="btn unit_set"></span>
                             </div>
                             
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-8"><?php echo translate('shipping_cost');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-8"><?php echo translate('Стоимость доставки');?></label>
                                 <div class="col-sm-4">
-                                    <input type="number" name="shipping_cost" id="demo-hor-8" min='0' step='.01' placeholder="<?php echo translate('shipping_cost');?>" class="form-control">
+                                    <input type="number" name="shipping_cost" id="demo-hor-8" min='0' 
+                                    step='.01' placeholder="<?php echo translate('Стоимость доставки');?>" class="form-control">
                                 </div>
                                 <span class="btn"><?php echo currency('','def'); ?> / </span>
                                 <span class="btn unit_set"></span>
                             </div>
                             
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-9"><?php echo translate('product_tax');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-9"><?php echo translate('Налог');?></label>
                                 <div class="col-sm-4">
-                                    <input type="number" name="tax" id="demo-hor-9" min='0' step='.01' placeholder="<?php echo translate('product_tax');?>" class="form-control">
+                                    <input type="number" name="tax" id="demo-hor-9" min='0' step='.01' 
+                                    placeholder="<?php echo translate('налог');?>" class="form-control">
                                 </div>
                                 <div class="col-sm-1">
                                     <select class="demo-chosen-select" name="tax_type">
@@ -178,9 +201,10 @@
                             </div>
                             
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-10"><?php echo translate('product_discount');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-10"><?php echo translate('Скидка');?></label>
                                 <div class="col-sm-4">
-                                    <input type="number" name="discount" id="demo-hor-10" min='0' step='.01' placeholder="<?php echo translate('product_discount');?>" class="form-control">
+                                    <input type="number" name="discount" id="demo-hor-10" min='0' step='.01' 
+                                    placeholder="<?php echo translate('Скидка');?>" class="form-control">
                                 </div>
                                 <div class="col-sm-1">
                                     <select class="demo-chosen-select" name="discount_type">
@@ -193,10 +217,10 @@
                         </div>
                         <div id="customer_choice_options" class="tab-pane fade">
                             <div class="form-group btm_border">
-                                <h4 class="text-thin text-center"><?php echo translate('customer_choice_options'); ?></h4>                            
+                                <h4 class="text-thin text-center"><?php echo translate('Варианты выбора клиента'); ?></h4>                            
                             </div>
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-14"><?php echo translate('color'); ?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-14"><?php echo translate('Цвет'); ?></label>
                                 <div class="col-sm-4"  id="more_colors">
                                   <div class="col-md-12" style="margin-bottom:8px;">
                                       <div class="col-md-10">
@@ -212,7 +236,7 @@
                                 </div>
                                 <div class="col-sm-2">
                                     <div id="more_color_btn" class="btn btn-primary btn-labeled fa fa-plus">
-                                        <?php echo translate('add_more_colors');?>
+                                        <?php echo translate('Добавить больше цветов');?>
                                     </div>
                                 </div>
                             </div>
@@ -222,18 +246,21 @@
                                 <label class="col-sm-4 control-label" for="demo-hor-inputpass"></label>
                                 <div class="col-sm-6">
                                     <h4 class="pull-left">
-                                        <i><?php echo translate('if_you_need_more_choice_options_for_customers_of_this_product_,please_click_here.');?></i>
+                                        <i><?php echo translate
+                                        ('если вам нужны дополнительные варианты выбора для покупателей этого продукта, нажмите здесь.');?></i>
                                     </h4>
                                     <div id="more_option_btn" class="btn btn-mint btn-labeled fa fa-plus pull-right">
-                                    <?php echo translate('add_customer_input_options');?></div>
+                                    <?php echo translate('Добавить параметры ввода клиента');?></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <span class="btn btn-purple btn-labeled fa fa-hand-o-right pull-right" onclick="next_tab()"><?php echo translate('next'); ?></span>
-                <span class="btn btn-purple btn-labeled fa fa-hand-o-left pull-right" onclick="previous_tab()"><?php echo translate('previous'); ?></span>
+                <span class="btn btn-purple btn-labeled fa fa-hand-o-right pull-right" onclick="next_tab()">
+                <?php echo translate('Следущий'); ?></span>
+                <span class="btn btn-purple btn-labeled fa fa-hand-o-left pull-right" onclick="previous_tab()">
+                <?php echo translate('Предыдущий'); ?></span>
         
             </div>
     
@@ -241,12 +268,16 @@
                 <div class="row">
                 	<div class="col-md-11">
                         <span class="btn btn-purple btn-labeled fa fa-refresh pro_list_btn pull-right" 
-                            onclick="ajax_set_full('add','<?php echo translate('add_product'); ?>','<?php echo translate('successfully_added!'); ?>','product_add',''); "><?php echo translate('reset');?>
+                            onclick="ajax_set_full('add','<?php echo translate('Добавить товар'); ?>',
+                            '<?php echo translate('Успешно добавлен!'); ?>','product_add',''); ">
+                            <?php echo translate('Перезагрузить');?>
                         </span>
                     </div>
                     
                     <div class="col-md-1">
-                        <span class="btn btn-success btn-md btn-labeled fa fa-upload pull-right enterer" onclick="form_submit('product_add','<?php echo translate('product_has_been_uploaded!'); ?>');proceed('to_add');" ><?php echo translate('upload');?></span>
+                        <span class="btn btn-success btn-md btn-labeled fa fa-upload pull-right enterer" 
+                        onclick="form_submit('product_add','<?php echo translate('Товар загружен!'); ?>');
+                        proceed('to_add');" ><?php echo translate('Обновить');?></span>
                     </div>
                     
                 </div>
@@ -256,7 +287,8 @@
     </div>
 </div>
 
-<script src="<?php $this->benchmark->mark_time(); echo base_url(); ?>template/back/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js">
+<script src="<?php $this->benchmark->mark_time(); echo base_url(); ?>
+template/back/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js">
 </script>
 
 <input type="hidden" id="option_count" value="-1">
@@ -269,7 +301,9 @@
                 var reader = new FileReader();
                 reader.readAsDataURL(this);
                 reader.onload = function (e) {
-                    $("#previewImg").append("<div style='float:left;border:4px solid #303641;padding:5px;margin:5px;'><img height='80' src='" + e.target.result + "'></div>");
+                    $("#previewImg").append(
+                        "<div style='float:left;border:4px solid #303641;padding:5px;margin:5px;'><img height='80' src='" + 
+                        e.target.result + "'></div>");
                 }
             });
         }

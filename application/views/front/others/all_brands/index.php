@@ -4,7 +4,7 @@
         <div class="page-header">
             <h2 class="section-title section-title-lg">
                 <span>
-                    <?php echo translate('Все бренды');?>
+                    <?php echo translate('All brands');?>
                 </span>
             </h2>
         </div>

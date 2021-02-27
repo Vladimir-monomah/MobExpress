@@ -1,7 +1,7 @@
 
 <div id="content-container">
     <div id="page-title">
-        <h1 class="page-header text-overflow"><?php echo translate('Product bulk upload'); ?></h1>
+        <h1 class="page-header text-overflow"><?php echo translate('Массовая загрузка продукта'); ?></h1>
     </div>
 
     <div class="tab-base">
@@ -16,29 +16,28 @@
                                         <div class="details-wrap">
                                             <div class="panel">
                                                 <div class="panel-heading">
-                                                    <h3>Instructions</h3>
+                                                    <h3>Инструкции</h3>
                                                 </div>
                                                 <div class="panel-body">
-                                                    <ol>
+                                                <ol>
                                                         <li>
-                                                            Download the skeleton file and fill it with data.
+                                                            Скачайте файл скелета и заполните его данными.
                                                         </li>
                                                         <li>
-                                                            You can download the example file to understand how the data must be filled
+                                                            Вы можете скачать файл примера, чтобы понять, как должны быть заполнены данные
                                                         </li>
                                                         <li>
-                                                            Once you have downloaded and filled the skeleton file , upload it in the form below and
-                                                            submit.
+                                                            После того как вы скачали и заполнили файл скелета, загрузите его в форму ниже и
+                                                            Отправить.
                                                         </li>
                                                         <li>
-                                                            <code>*Do not upload more than 50 products at a time . Add maximum 2 image URLs per
-                                                                product.</code>
+                                                            <code> * Не загружайте более 50 товаров за раз. Добавьте не более 2 URL-адресов изображений на
+                                                                продукт. </code>
                                                         </li>
                                                         <li>
-                                                            Products should be uploaded successfully.
+                                                            Товары должны быть успешно загружены.
                                                         </li>
                                                     </ol>
-
                                                     <div>
                                                         <a class="btn btn-sm btn-primary btn-dark" target="_blank" download
                                                            href="<?php echo base_url() . "uploads/bulk_skeletons/vendor_product.xlsx" ?>"><?php echo translate('Download product bulk upload skeleton file'); ?></a>
@@ -49,30 +48,29 @@
                                             </div>
                                             <div class="panel">
                                                 <div class="panel-heading">
-                                                    <h3>More Instructions</h3>
+                                                    <h3>Дополнительные инструкции</h3>
                                                 </div>
                                                 <div class="panel-body">
-                                                    <ol>
+                                                <ol>
                                                         <li>
-                                                            Category,Sub category and Brand should be in <code>numerical ids</code>.Click the <code>respected modals/pop-ups</code> to see the related ids
+                                                            Категория, подкатегория и бренд должны быть в <code> числовых идентификаторах </code>. Щелкните <code> уважаемые модальные / всплывающие окна </code>, чтобы увидеть связанные идентификаторы.
                                                         </li>
                                                         <li>
-                                                            Tax and Discount can be in percentage.For example if the discount is 15, write only
-                                                            15.If the discount is 15 percent, write 15%.Do the same for tax.
+                                                            Налог и скидка могут быть в процентах. Например, если скидка 15, укажите только
+                                                            15.Если скидка составляет 15 процентов, напишите 15%. Сделайте то же самое с налогом.
                                                         </li>
                                                         <li>
-                                                            Tags are comma separated.If you have tags like "baby" and "food" write
-                                                            <code>baby,food</code>.
+                                                            Теги разделяются запятыми. Если у вас есть теги типа "ребенок" и "еда", напишите
+                                                            <code> детское питание </code>.
                                                         </li>
                                                         <li>
-                                                            Image Urls are comma separated.If you have many image urls write like this: <code>http://imagescource/image001.jpg,http://anotherimagescource/image005.jpg</code>
+                                                            URL-адреса изображений разделяются запятыми. Если у вас много URL-адресов изображений, напишите так: <code> http: //imagescource/image001.jpg,http: //anotherimagescource/image005.jpg </code>
                                                         </li>
-                                                        <li>To publish automatically, fill the "published" column with <code>yes</code></li>
+                                                        <li> Для автоматической публикации заполните столбец "опубликовано" <code>yes</code> </li>
                                                         <li>
-                                                            Products should be uploaded successfully.
+                                                            Товары должны быть успешно загружены.
                                                         </li>
                                                     </ol>
-
                                                     <div>
 
                                                         <button data-target="#product_category" type="button" class="btn btn-primary"
@@ -90,14 +88,14 @@
                                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                             <span aria-hidden="true">&times;</span>
                                                                         </button>
-                                                                        <h5 class="modal-title" id=""><?php echo translate('Category IDs')?></h5>
+                                                                        <h5 class="modal-title" id=""><?php echo translate('Id категории')?></h5>
                                                                     </div>
                                                                     <div class="modal-body" style="overflow:scroll; max-height:400px;">
                                                                         <?php if(!empty($physical_categories)){ ?>
                                                                             <table class="table table-bordered table-responsive dataTable">
                                                                                 <tr>
-                                                                                    <th><?php echo translate('Category ID')?></th>
-                                                                                    <th><?php echo translate('Category Name')?></th>
+                                                                                    <th><?php echo translate('Id категории')?></th>
+                                                                                    <th><?php echo translate('Название категории')?></th>
                                                                                 </tr>
                                                                                 <?php foreach($physical_categories as $physical_category){ ?>
                                                                                     <tr>
@@ -119,15 +117,15 @@
                                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                             <span aria-hidden="true">&times;</span>
                                                                         </button>
-                                                                        <h5 class="modal-title" id=""><?php echo translate('Sub Category IDs with Category ID')?></h5>
+                                                                        <h5 class="modal-title" id=""><?php echo translate('Идентификаторы подкатегории с идентификатором категории')?></h5>
                                                                     </div>
                                                                     <div class="modal-body" style="overflow:scroll; max-height:400px;">
                                                                         <?php if(!empty($physical_sub_categories)){ ?>
                                                                             <table class="table table-bordered table-responsive dataTable">
                                                                                 <tr>
-                                                                                    <th><?php echo translate('Sub Category ID')?></th>
-                                                                                    <th><?php echo translate('Sub Category Name')?></th>
-                                                                                    <th><?php echo translate('Category ID')?></th>
+                                                                                    <th><?php echo translate('ID подкатегории')?></th>
+                                                                                    <th><?php echo translate('Название подкатегории')?></th>
+                                                                                    <th><?php echo translate('ID категории')?></th>
                                                                                 </tr>
                                                                                 <?php foreach($physical_sub_categories as $physical_sub_category){ ?>
                                                                                     <tr>
@@ -150,15 +148,15 @@
                                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                             <span aria-hidden="true">&times;</span>
                                                                         </button>
-                                                                        <h5 class="modal-title" id=""><?php echo translate('Brand IDs')?></h5>
+                                                                        <h5 class="modal-title" id=""><?php echo translate('Id бренда')?></h5>
 
                                                                     </div>
                                                                     <div class="modal-body" style="overflow:scroll; max-height:400px;">
                                                                         <?php if(!empty($brands)){ ?>
                                                                             <table class="table table-bordered table-responsive dataTable">
                                                                                 <tr>
-                                                                                    <th><?php echo translate('Brand ID')?></th>
-                                                                                    <th><?php echo translate('Brand Name')?></th>
+                                                                                    <th><?php echo translate('Id бренда')?></th>
+                                                                                    <th><?php echo translate('Название бренда')?></th>
                                                                                 </tr>
                                                                                 <?php foreach($brands as $brand){ ?>
                                                                                     <tr>
@@ -178,7 +176,7 @@
                                             </div>
                                             <div class="panel mb-0">
                                                 <div class="panel-heading">
-                                                    <h3><?php echo translate("Upload your products") ?></h3>
+                                                    <h3><?php echo translate("Загрузите свои продукты") ?></h3>
                                                 </div>
                                                 <div class="panel-body">
                                                     <?php
@@ -191,12 +189,12 @@
                                                     ?>
                                                     <div class="form-group">
                                                 <span class="btn btn-default btn-file">
-                                                    <?php echo translate("Choose File") ?>
+                                                    <?php echo translate("Выбрать файл") ?>
                                                     <input type="file" class="form-control" name="bulk_file">
                                                 </span>
                                                     </div>
                                                     <div class="form-group">
-                                                        <button class="btn btn-mint btn-labeled fa fa-upload" type="submit"><?php echo translate("Upload Products") ?></button>
+                                                        <button class="btn btn-mint btn-labeled fa fa-upload" type="submit"><?php echo translate("Загрузить продукты") ?></button>
                                                     </div>
                                                     <?php echo form_close() ?>
 
