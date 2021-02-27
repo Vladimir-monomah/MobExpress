@@ -21,7 +21,7 @@
 				<td><?php echo $row['name']; ?></td>
 				<td class="text-right">
 					<a class="btn btn-success btn-xs btn-labeled fa fa-wrench" data-toggle="tooltip" 
-                    	onclick="ajax_modal('edit','<?php echo translate('edit_blog_category'); ?>',
+                    	onclick="ajax_modal('edit','<?php echo translate('Редактировать блог категорий'); ?>',
 						'<?php echo translate('Успешно отредактирован!'); ?>','blog_category_edit',
 						'<?php echo $row['blog_category_id']; ?>')" 
                         	data-original-title="Edit" data-container="body">

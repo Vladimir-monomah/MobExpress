@@ -116,7 +116,7 @@
                                 <div class="col-sm-8"><small>*
                                 <?php echo translate('Напишите описание, удобное для поисковых систем, не более 160 символов')?></small></div>
                                 <label class="col-sm-4 control-label" for="">
-                                    <?php echo translate('Seo Friendly Description');?>
+                                    <?php echo translate('Дружественное описание SEO');?>
                                 </label>
                                 <div class="col-sm-6">
                                         <textarea name="seo_description"
@@ -232,7 +232,7 @@
                                 </div>
                                 <div class="col-sm-2">
                                     <div id="more_color_btn" class="btn btn-primary btn-labeled fa fa-plus">
-                                        <?php echo translate('add_more_colors');?>
+                                        <?php echo translate('Добавить больше цветов');?>
                                     </div>
                                 </div>
                             </div>

@@ -106,11 +106,11 @@
                             <div class="form-group btm_border" id="video_upload" style="display:none">
                                 <div class="form-group">
                                     <label class="col-sm-4 control-label">
-                                        <?php echo translate('upload_video');?>
+                                        <?php echo translate('Загрузить видео');?>
                                     </label>
                                     <div class="col-sm-6 abstract">
                                         <span class="pull-left btn btn-default btn-file"> 
-                                        <?php echo translate('выберите видео файл');?>
+                                        <?php echo translate('Выберите видео файл');?>
                                    			<input type="file" name="videoFile" class="videoInp" accept="video/*">
                                     	</span>
                                     </div>
@@ -141,7 +141,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-4 control-label">
-                                        <?php echo translate('link');?>
+                                        <?php echo translate('Связь');?>
                                     </label>
                                     <div class="col-sm-6 abstract">
                                         <input type="text" name="video_link" class="form-control video_link" 
@@ -173,7 +173,7 @@
                             </div>
                             
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-13"><?php echo translate('description'); ?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-13"><?php echo translate('Описание'); ?></label>
                                 <div class="col-sm-6">
                                     <textarea rows="9"  class="summernotes" data-height="200" data-name="description"></textarea>
                                 </div>
@@ -303,7 +303,8 @@
                 	<div class="col-md-11">
                         <span class="btn btn-purple btn-labeled fa fa-refresh pro_list_btn pull-right" 
                             onclick="ajax_set_full('add','<?php echo translate('Добавить продукт'); ?>',
-                            '<?php echo translate('Успешно добавлен!'); ?>','digital_add',''); "><?php echo translate('Перезагрузить');?>
+                            '<?php echo translate('Успешно добавлен!'); ?>','digital_add',''); ">
+                            <?php echo translate('Перезагрузить');?>
                         </span>
                     </div>
                     
@@ -341,7 +342,7 @@
 <div id="vdo_select_html" style="display:none;">
 	<div id="option_set">
     	<label class="col-sm-4 control-label">
-			<?php echo translate('video_options');?>
+			<?php echo translate('Параметры видео');?>
         </label>
         <div class="col-sm-6">
             <select class="demo-chosen-select_o" name="upload_method" onchange="video_sector(this.value)">

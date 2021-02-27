@@ -148,7 +148,7 @@
                     <label class="col-sm-4 control-label" for="demo-hor-1"><?php echo translate('Значение скидки');?></label>
                     <div class="col-sm-6">
                         <input type="number" name="discount_value" id="demo-hor-1"  value="<?php echo $spec['discount_value']; ?>"
-                            placeholder="<?php echo translate('discount_value'); ?>" class="form-control required">
+                            placeholder="<?php echo translate('Значение скидки'); ?>" class="form-control required">
                     </div>
                 </div>
             </div>

@@ -86,7 +86,8 @@
                                     </div>
                                     <br />
                                     <div class="panel-footer text-right">
-                                        <span class="btn btn-success btn-labeled fa fa-check submitter enterer"  data-ing='<?php echo translate('saving'); ?>' data-msg='<?php echo translate('settings_updated!'); ?>'>
+                                        <span class="btn btn-success btn-labeled fa fa-check submitter enterer"  
+                                        data-ing='<?php echo translate('Сохранение'); ?>' data-msg='<?php echo translate('Настройки обновлены!'); ?>'>
                                             <?php echo translate('Сохранить');?>
                                         </span>
                                     </div>
@@ -168,7 +169,7 @@
                                     </div>
 
                                     <div class="panel-heading margin-bottom-15">
-                                        <h3 class="panel-title"><?php echo translate('настройки входа в google +');?></h3>
+                                        <h3 class="panel-title"><?php echo translate('Настройки входа в google +');?></h3>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label" for="demo-hor-inputemail">
@@ -236,7 +237,7 @@
                                     <br />
                                     <div class="panel-footer text-right">
                                         <span class="btn btn-success btn-labeled fa fa-check submitter enterer"  data-ing='
-                                        <?php echo translate('saving'); ?>' data-msg='<?php echo translate('Настройки обновлены!'); ?>'>
+                                        <?php echo translate('Сохранение'); ?>' data-msg='<?php echo translate('Настройки обновлены!'); ?>'>
                                             <?php echo translate('Сохранить');?>
                                         </span>
                                     </div>
@@ -263,7 +264,7 @@
                                     ));
                                 ?>
                                     <div class="panel-heading margin-bottom-15">
-                                        <h3 class="panel-title"><?php echo translate('настройки комментариев к продукту');?></h3>
+                                        <h3 class="panel-title"><?php echo translate('Настройки комментариев к продукту');?></h3>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label" for="demo-hor-inputemail">
@@ -272,7 +273,7 @@
                                         <div class="col-sm-8">
                                             <div class="col-sm-">
                                                 <select class="demo-chosen-select" name="type">
-                                                    <option value=""><?php echo translate('Нету'); ?></option>
+                                                    <option value=""><?php echo translate('Нет'); ?></option>
                                                     <option value="facebook" <?php if($comment_type == 'facebook')
                                                     { ?>selected<?php } ?>><?php echo translate('комментарий facebook'); ?></option>
                                                     <option value="disqus" <?php if($comment_type == 'disqus')
@@ -305,7 +306,8 @@
                                     </div>
                                     <br />
                                     <div class="panel-footer text-right">
-                                        <span class="btn btn-success btn-labeled fa fa-check submitter enterer"  data-ing='<?php echo translate('saving'); ?>' data-msg='<?php echo translate('settings_updated!'); ?>'>
+                                        <span class="btn btn-success btn-labeled fa fa-check submitter enterer"  
+                                        data-ing='<?php echo translate('Сохранение'); ?>' data-msg='<?php echo translate('Настройки обновлены!'); ?>'>
                                             <?php echo translate('Сохранить');?>
                                         </span>
                                     </div>

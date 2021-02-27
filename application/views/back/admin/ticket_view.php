@@ -99,7 +99,7 @@
                             <b><i>
 							<?php
                                 if($from1['type'] == 'admin'){
-                                    echo translate('admin');
+                                    echo translate('Админ');
                                 } else if($from1['type'] == 'user'){
                                     echo $this->crud_model->get_type_name_by_id('user',$from['id'],'username');
                                 }

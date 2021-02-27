@@ -3,7 +3,7 @@
     { 
 ?>
     <h4 class="modal-title text-center padd-all">
-    	<?php echo translate('message_from');?> <?php echo $row['name'];?>
+    	<?php echo translate('Сообщение от');?> <?php echo $row['name'];?>
     </h4>
     <hr style="margin-top: 10px !important;">
     <div class="row">

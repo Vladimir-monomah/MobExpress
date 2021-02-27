@@ -45,7 +45,7 @@
                             ?>
                             <div class="panel-body">
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label"><?php echo translate('system_name'); ?></label>
+                                    <label class="col-sm-3 control-label"><?php echo translate('Системное имя'); ?></label>
                                     <div class="col-sm-6">
                                         <input type="text" name="system_name"
                                                value="<?php echo $this->crud_model->get_type_name_by_id
@@ -81,7 +81,7 @@
                                                class="form-control">
                                     </div>
                                     <div class="col-sm-2">
-                                        <?php echo translate('minutes'); ?>
+                                        <?php echo translate('минуты'); ?>
                                     </div>
                                 </div>
 
@@ -209,7 +209,7 @@
                                 <!-- Smtp Host  -->
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">
-                                        <?php echo translate('smtp_status'); ?>
+                                        <?php echo translate('smtp статус'); ?>
                                     </label>
                                     <div class="col-sm-6">
                                         <input id="mail_status" class='sw4' data-set='mail_status' type="checkbox"

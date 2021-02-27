@@ -9,7 +9,7 @@
                 if($this->crud_model->is_admin_in_sale($sale[0]['sale_id'])){
             ?>
             <li>
-                <a data-toggle="tab" href="#quart"><?php echo translate('invoice_for'); ?>: <?php echo translate('Админ'); ?></a>
+                <a data-toggle="tab" href="#quart"><?php echo translate('Счёт за'); ?>: <?php echo translate('Админ'); ?></a>
             </li>
             <?php
                 }
@@ -19,7 +19,7 @@
                 foreach ($vendors as $ven) {
             ?>
             <li>
-                <a data-toggle="tab" href="#half_<?php echo $ven; ?>"><?php echo translate('invoice_for'); ?>: 
+                <a data-toggle="tab" href="#half_<?php echo $ven; ?>"><?php echo translate('Счёт за'); ?>: 
                 <?php echo $this->crud_model->get_type_name_by_id('vendor', $ven, 'display_name'); ?> 
                 (<?php echo translate('Поставщик'); ?>)</a>
             </li>
@@ -167,7 +167,7 @@
                                                 array('product_id' => $row1['id']))->row()->is_bundle == 'yes') {
                                                 ?>
                                                 <div style="padding: 5px">
-                                                    <b><?php echo translate('products_:');?></b> <br>
+                                                    <b><?php echo translate('Товары_:');?></b> <br>
                                                     <?php
                                                         $products = $this->db->get_where('product', 
                                                         array('product_id' => $row1['id']))->row()->products;
@@ -419,7 +419,7 @@
                     <div class="panel-body" id="demo_s">
                         <div class="panel panel-bordered panel-dark shadow-none">
                             <div class="panel-heading">
-                                <h1 class="panel-title"><?php echo translate('payment_invoice');?></h1>
+                                <h1 class="panel-title"><?php echo translate('Счёт на оплату');?></h1>
                             </div>
                             <div class="table-responsive">
                                 <table class="table table-bordered table-striped">
@@ -899,9 +899,9 @@
 		  });
 
 		  var infowindow = new google.maps.InfoWindow({
-			content: '<p><?php echo translate('marker_location'); ?>:</p><p><?php echo $info['address1']; ?> </p><p>
-            <?php echo $info['address2']; ?> </p><p><?php echo translate('city'); ?>: <?php echo $info['city']; ?> </p><p>
-            <?php echo translate('ZIP'); ?>: <?php echo $info['zip']; ?> </p>'
+			content: '<p><?php echo translate('Расположение'); ?>:</p><p><?php echo $info['address1']; ?> </p><p>
+            <?php echo $info['address2']; ?> </p><p><?php echo translate('Город'); ?>: <?php echo $info['city']; ?> </p><p>
+            <?php echo translate('Индекс'); ?>: <?php echo $info['zip']; ?> </p>'
 		  });
 		  google.maps.event.addListener(marker, 'click', function() {
 			infowindow.open(map, marker);

@@ -201,7 +201,7 @@
                             <div class="panel">
                                 <div class="panel-heading margin-bottom-20">
                                     <h3 class="panel-title">
-                                        <?php echo translate('manage_search_engine_optimization');?>
+                                        <?php echo translate('Управлять поисковой оптимизацией');?>
                                     </h3>
                                 </div>
                             <?php 

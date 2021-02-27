@@ -78,7 +78,7 @@
                             ?>
                                 <div class="form-group top_cat">
                                     <label class="col-sm-3 control-label" for="demo-hor-3">
-                                    <?php echo translate('выберите категории_ (максимум 10)');?></label>                
+                                    <?php echo translate('Выберите категории_ (максимум 10)');?></label>                
                                     <div class="col-sm-6">
                                         <?php 
                                             $categories =json_decode($this->db->get_where('ui_settings',
@@ -167,7 +167,7 @@
                                                 <div class="form-group">
                                                     <div class="col-sm-12">
                                                         <span class="pull-left btn btn-default btn-file">
-                                                            <?php echo translate('select_banner_image');?>
+                                                            <?php echo translate('Выберите изображение баннера');?>
                                                             <input type="file" name="img" class="form-control imgInp" 
                                                             accept="image">
                                                         </span> 
@@ -185,7 +185,7 @@
                                                 <div class="form-group">
                                                     <div class="col-sm-12">
                                                          <input type="text" name="link" value="<?php echo $row['link']; ?>" 
-                                                            placeholder="<?php echo translate('link');?>" class="form-control" >
+                                                            placeholder="<?php echo translate('Связь');?>" class="form-control" >
                                                     </div>
                                                 </div>
                                             </div>
@@ -217,7 +217,7 @@
                                 ));
                             ?>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label" ><?php echo translate('parallax_title_for_search');?>
+                                    <label class="col-sm-3 control-label" ><?php echo translate('Заголовок параллакса для поиска');?>
                                     </label>
                                     <div class="col-sm-6">
                                         <input type="text" name="ps_title" value="<?php echo $this->crud_model->
@@ -344,7 +344,7 @@
                             ));
                         ?>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label"><?php echo translate('vandor_(_show_/_hide_)');?></label>
+                                <label class="col-sm-3 control-label"><?php echo translate('Поставщик (показать / скрыть)');?></label>
                                 <div class="col-sm-6">
                                     <input id="feature_25" 
                                         data-id="25" class='sw2' 
@@ -425,7 +425,7 @@
                                     ?>
                                     <div class="col-sm-12 element_box">
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label" for="demo-hor-2"><?php echo translate('category');?></label>
+                                            <label class="col-sm-3 control-label" for="demo-hor-2"><?php echo translate('Категория');?></label>
                                             <div class="col-sm-9 category_select_div">
                                                 <?php
                                                     $l = 0;
@@ -447,13 +447,13 @@
                                             </div>
                                         </div>
                                         <div class="form-group sub">
-                                            <label class="col-sm-3 control-label" for="demo-hor-3"><?php echo translate('sub-categories_(max 4)');?></label>                
+                                            <label class="col-sm-3 control-label" for="demo-hor-3"><?php echo translate('Подкатегории (максимум 4)');?></label>                
                                             <div class="col-sm-6 sub_cat">
                                                 <?php echo $this->crud_model->select_html('sub_category','sub_category['.$cdata['category'].']','sub_category_name','edit','demo-cs-multiselect',json_encode($cdata['sub_category']),'category',$cdata['category'],'check_sub_length'); ?>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label"><?php echo translate('color_preference_:');?></label>
+                                            <label class="col-sm-3 control-label"><?php echo translate('Цветовые предпочтения:');?></label>
                                             <div class="col-sm-6">
                                                 <div class="input-group demo2">
                                                    <input type="text" value="<?php echo $cdata['color_back']; ?>" name="color1[<?php echo $cdata['category']; ?>]" class="form-control color_class1" />
@@ -462,7 +462,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-3 control-label"><?php echo translate('title_color:');?></label>
+                                            <label class="col-sm-3 control-label"><?php echo translate('Цвет заголовка:');?></label>
                                             <div class="col-sm-6">
                                                 <div class="input-group demo2">
                                                    <input type="text" value="<?php echo $cdata['color_text']; ?>" name="color2[<?php echo $cdata['category']; ?>]" class="form-control color_class2" />
@@ -486,12 +486,12 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="btn btn-mint btn-labeled fa fa-plus-square pull-right add_new" onClick="add_home_cat_box()">
-                                            <?php echo translate('add_new');?>
+                                            <?php echo translate('Добавить новое');?>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group" style="margin-top:100px;">
-                                    <label class="col-sm-3 control-label" style="margin-top:15px;" ><?php echo translate('choose_product_box_style');?></label>
+                                    <label class="col-sm-3 control-label" style="margin-top:15px;" ><?php echo translate('Выберите стиль коробки продукта');?></label>
                                     <div class="col-sm-6">
                                         <div class="row">
                                         <?php 
@@ -513,8 +513,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-12">
-                                    <span class="btn btn-success btn-labeled fa fa-check submitter pull-right enterer" type= data-ing='<?php echo translate('updating'); ?>' data-msg='<?php echo translate('home_categories_updated!'); ?>'>
-                                        <?php echo translate('update');?>
+                                    <span class="btn btn-success btn-labeled fa fa-check submitter pull-right enterer" 
+                                    type= data-ing='<?php echo translate('Обновление'); ?>' data-msg='<?php echo translate('Обновлены домашние категории!'); ?>'>
+                                        <?php echo translate('Обновить');?>
                                     </span>
                                 </div>
                             </form>
@@ -533,7 +534,7 @@
                                 ));
                             ?>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label"><?php echo translate('blog_(_show_/_hide_)');?></label>
+                                    <label class="col-sm-3 control-label"><?php echo translate('Блог (показать / скрыть)');?></label>
                                     <div class="col-sm-6">
                                         <input id="feature_26" 
                                             data-id="26" class='sw2' 
@@ -544,23 +545,26 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label" ><?php echo translate('parallax_title_for_blog');?></label>
+                                    <label class="col-sm-3 control-label" ><?php echo translate('Заголовок параллакса для блога');?></label>
                                     <div class="col-sm-6">
-                                        <input type="text" name="pb_title" value="<?php echo $this->crud_model->get_type_name_by_id('ui_settings','19','value'); ?>"  class="form-control">
+                                        <input type="text" name="pb_title" 
+                                        value="<?php echo $this->crud_model->get_type_name_by_id('ui_settings','19','value'); ?>"  class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group margin-top-10">
-                                    <label class="col-sm-3 control-label margin-top-10" for="demo-hor-inputemail"><?php echo translate('parallax_image_for_blog');?></label>
+                                    <label class="col-sm-3 control-label margin-top-10" for="demo-hor-inputemail">
+                                    <?php echo translate('Параллакс изображение для блога');?></label>
                                     <div class="col-sm-9">
                                         <div class="col-sm-5" style="margin:2px;padding:2px;">
-                                            <img class="img-responsive img-md img-border img_show2" style="width:100%;height:150px" src="<?php echo base_url(); ?>uploads/others/parralax_blog.jpg">
+                                            <img class="img-responsive img-md img-border img_show2" style="width:100%;height:150px" 
+                                            src="<?php echo base_url(); ?>uploads/others/parralax_blog.jpg">
                                         </div>
                                         <br />
                                         <br />
                                         <br />
                                         <div class="col-sm-2">
                                             <span class="pull-left btn btn-default btn-file margin-top-10">
-                                                <?php echo translate('select_image');?>
+                                                <?php echo translate('Выбрать картинку');?>
                                                 <input type="file" name="par2" class="form-control imgInp2">
                                             </span>
                                         </div>
@@ -568,14 +572,16 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label" ><?php echo translate('number_of_latest_blog_(_to_show_)');?></label>
+                                    <label class="col-sm-3 control-label" ><?php echo translate('Номер последнего блога (показать)');?></label>
                                     <div class="col-sm-6">
-                                        <input type="number" name="blog_no" value="<?php echo $this->crud_model->get_type_name_by_id('ui_settings','28','value'); ?>"  class="form-control">
+                                        <input type="number" name="blog_no" 
+                                        value="<?php echo $this->crud_model->get_type_name_by_id('ui_settings','28','value'); ?>"  class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-12">
-                                    <span class="btn btn-success btn-labeled fa fa-check submitter pull-right enterer" type= data-ing='<?php echo translate('updating'); ?>' data-msg='<?php echo translate('blog_section_updated!'); ?>'>
-                                        <?php echo translate('update');?>
+                                    <span class="btn btn-success btn-labeled fa fa-check submitter pull-right enterer" 
+                                    type= data-ing='<?php echo translate('Обновление'); ?>' data-msg='<?php echo translate('Обновлен раздел блога!'); ?>'>
+                                        <?php echo translate('Обновить');?>
                                     </span>
                                 </div>
                             </form>
@@ -586,7 +592,7 @@
                     <div class="row">
                         <div class="col-md-12 form-horizontal">
                             <div class="form-group">
-                                <label class="col-sm-3 control-label"><?php echo translate('special_products_(_show_/_hide_)');?></label>
+                                <label class="col-sm-3 control-label"><?php echo translate('Специальные товары (показать / скрыть)');?></label>
                                 <div class="col-sm-6">
                                     <input id="feature_31" 
                                         data-id="31" class='sw2' 
@@ -614,7 +620,7 @@
                                 ));
                             ?>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label"><?php echo translate('brand_(_show_/_hide_)');?></label>
+                                <label class="col-sm-3 control-label"><?php echo translate('Бренд (показать / скрыть)');?></label>
                                 <div class="col-sm-6">
                                     <input id="feature_23" 
                                         data-id="23" class='sw2' 
@@ -625,14 +631,16 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label" ><?php echo translate('number_of_brand_(_to_show_)');?></label>
+                                <label class="col-sm-3 control-label" ><?php echo translate('Номер бренда (показать)');?></label>
                                 <div class="col-sm-6">
-                                    <input type="number" name="brand_no" value="<?php echo $this->crud_model->get_type_name_by_id('ui_settings','22','value'); ?>"  class="form-control">
+                                    <input type="number" name="brand_no" 
+                                    value="<?php echo $this->crud_model->get_type_name_by_id('ui_settings','22','value'); ?>"  class="form-control">
                                 </div>
                             </div>
                             <div class="form-group col-sm-12">
-                                <span class="btn btn-success btn-labeled fa fa-check submitter pull-right enterer" type= data-ing='<?php echo translate('updating'); ?>' data-msg='<?php echo translate('brand_section_updated!'); ?>'>
-                                    <?php echo translate('update');?>
+                                <span class="btn btn-success btn-labeled fa fa-check submitter pull-right enterer" 
+                                type= data-ing='<?php echo translate('Обновление'); ?>' data-msg='<?php echo translate('Обновлен раздел брендов!'); ?>'>
+                                    <?php echo translate('Обновить');?>
                                 </span>
                             </div>
                         </form>
@@ -654,7 +662,7 @@
                                 ));
                             ?>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label"><?php echo translate('product_bundle_(_show_/_hide_)');?></label>
+                                <label class="col-sm-3 control-label"><?php echo translate('Набор товаров (показать / скрыть)');?></label>
                                 <div class="col-sm-6">
                                     <input id="product_bundle_40" 
                                         data-id="40" class='sw3' 
@@ -665,13 +673,14 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label" ><?php echo translate('number_of_products_(_to_show_)');?></label>
+                                <label class="col-sm-3 control-label" ><?php echo translate('Количество продуктов (показать)');?></label>
                                 <div class="col-sm-6">
-                                    <input type="number" name="bundle_no" value="<?php echo $this->crud_model->get_type_name_by_id('ui_settings','41','value'); ?>"  class="form-control">
+                                    <input type="number" name="bundle_no" 
+                                    value="<?php echo $this->crud_model->get_type_name_by_id('ui_settings','41','value'); ?>"  class="form-control">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label" style="margin-top:15px;" ><?php echo translate('choose_product_box_style');?></label>
+                                <label class="col-sm-3 control-label" style="margin-top:15px;" ><?php echo translate('Выберите стиль коробки продукта');?></label>
                                 <div class="col-sm-6">
                                     <div class="row">
                                     <?php 
@@ -680,9 +689,13 @@
                                         foreach($style as $value){
                                     ?>
                                         <div class="cc-selector col-sm-4">
-                                            <input type="radio" id="pb_box_<?php echo $value; ?>" value="<?php echo $value; ?>" name="fea_pro_box" <?php if($box_style == $value){ echo 'checked'; } ?> >
-                                            <label class="drinkcard-cc" style="margin-bottom:0px; width:100%;" for="pb_box_<?php echo $value; ?>">
-                                                    <img src="<?php echo base_url() ?>uploads/product_boxes/<?php echo 'product_grid_'.$value.'.jpg' ?>" width="100%" height="100%" alt="<?php echo 'product_box_style_'.$value; ?>" />
+                                            <input type="radio" id="pb_box_<?php echo $value; ?>" value="<?php echo $value; ?>" 
+                                            name="fea_pro_box" <?php if($box_style == $value){ echo 'checked'; } ?> >
+                                            <label class="drinkcard-cc" style="margin-bottom:0px; width:100%;" 
+                                            for="pb_box_<?php echo $value; ?>">
+                                                    <img src="<?php echo base_url() ?>uploads/product_boxes/
+                                                    <?php echo 'product_grid_'.$value.'.jpg' ?>" width="100%" height="100%" 
+                                                    alt="<?php echo 'product_box_style_'.$value; ?>" />
                                                    
                                             </label>
                                         </div>
@@ -693,8 +706,10 @@
                                 </div>
                             </div>
                             <div class="form-group col-sm-12">
-                                <span class="btn btn-success btn-labeled fa fa-check submitter pull-right enterer" type= data-ing='<?php echo translate('updating'); ?>' data-msg='<?php echo translate('bundle_product_section_updated!'); ?>'>
-                                    <?php echo translate('update');?>
+                                <span class="btn btn-success btn-labeled fa fa-check submitter pull-right enterer" 
+                                type= data-ing='<?php echo translate('Обновление'); ?>'
+                                 data-msg='<?php echo translate('Обновлен раздел комплектов продуктов!'); ?>'>
+                                    <?php echo translate('Обновить');?>
                                 </span>
                             </div>
                         </form>
@@ -713,26 +728,33 @@
                                 ));
                             ?>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label"><?php echo translate('customer_product_(_show_/_hide_)');?></label>
+                                <label class="col-sm-3 control-label"><?php echo translate('Продукт клиента (показать / скрыть)');?>
+                                </label>
                                 <div class="col-sm-6">
                                     <input id="customer_product_43" 
                                         data-id="43" class='sw8' 
                                             type="checkbox" name="value" 
-                                                <?php if($this->crud_model->get_type_name_by_id('ui_settings','43','value') == 'ok'){
+                                                <?php if($this->crud_model->
+                                                get_type_name_by_id('ui_settings','43','value') == 'ok'){
                                                      ?>checked<?php } ?>
                                                         value="ok" />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label" ><?php echo translate('number_of_product_(_to_show_)');?></label>
+                                <label class="col-sm-3 control-label" >
+                                <?php echo translate('Номер продукта (показать)');?></label>
                                 <div class="col-sm-6">
-                                    <input type="number" name="customer_product_no" value="<?php echo $this->crud_model->get_type_name_by_id('ui_settings','44','value'); ?>"  class="form-control">
+                                    <input type="number" name="customer_product_no" 
+                                    value="<?php echo $this->crud_model->get_type_name_by_id('ui_settings','44','value'); ?>"  
+                                    class="form-control">
                                 </div>
                             </div>
                             
                             <div class="form-group col-sm-12">
-                                <span class="btn btn-success btn-labeled fa fa-check submitter pull-right enterer" type= data-ing='<?php echo translate('updating'); ?>' data-msg='<?php echo translate('customer_product_section_updated!'); ?>'>
-                                    <?php echo translate('update');?>
+                                <span class="btn btn-success btn-labeled fa fa-check submitter pull-right enterer" 
+                                type= data-ing='<?php echo translate('Обновление'); ?>' 
+                                data-msg='<?php echo translate('Обновлен раздел товаров для клиентов!'); ?>'>
+                                    <?php echo translate('Обновить');?>
                                 </span>
                             </div>
                         </form>
@@ -811,7 +833,7 @@ function add_home_cat_box(){
     $('#home_category_selection_box').append(''
                                             +'  <div class="col-sm-12 element_box">'
                                             +'      <div class="form-group">'
-                                            +'          <label class="col-sm-3 control-label" for="demo-hor-2"><?php echo translate('category');?></label>'
+                                            +'          <label class="col-sm-3 control-label" for="demo-hor-2"><?php echo translate('Категория');?></label>'
                                             +'          <div class="col-sm-9 category_select_div">'
                                             +'          <?php
                                                             foreach($category as $cat){
@@ -829,12 +851,12 @@ function add_home_cat_box(){
                                             +'          </div>'
                                             +'      </div>'
                                             +'      <div class="form-group sub" style="display:none;">'
-                                            +'          <label class="col-sm-3 control-label" for="demo-hor-3"><?php echo translate('sub-categories_(max 4)');?></label>'
+                                            +'          <label class="col-sm-3 control-label" for="demo-hor-3"><?php echo translate('подкатегории (максимум 4)');?></label>'
                                             +'          <div class="col-sm-6 sub_cat">'
                                             +'          </div>'
                                             +'      </div>'
                                             +'      <div class="form-group">'
-                                            +'          <label class="col-sm-3 control-label"><?php echo translate('color_preference_:');?></label>'
+                                            +'          <label class="col-sm-3 control-label"><?php echo translate('Цветовые предпочтения:');?></label>'
                                             +'          <div class="col-sm-6">'
                                             +'              <div class="input-group demo2">'
                                             +'                 <input type="text" value="rgba(71, 4, 103,1)" name="color1" class="form-control color_class1" />'
@@ -843,7 +865,7 @@ function add_home_cat_box(){
                                             +'          </div>'
                                             +'      </div>'
                                             +'      <div class="form-group">'
-                                            +'          <label class="col-sm-3 control-label"><?php echo translate('title_color:');?></label>'
+                                            +'          <label class="col-sm-3 control-label"><?php echo translate('Цвет заголовка:');?></label>'
                                             +'          <div class="col-sm-6">'
                                             +'              <div class="input-group demo2">'
                                             +'                 <input type="text" value="rgba(255,255,255,1)" name="color2" class="form-control color_class2" />'
@@ -1024,7 +1046,7 @@ $(document).ready(function() {
                 $.activeitNoty({
                     type: 'success',
                     icon: 'fa fa-check',
-                    message: '<?php echo translate('banner_published!'); ?>',
+                    message: '<?php echo translate('Баннер опубликован!'); ?>',
                     container: 'floating',
                     timer: 3000
                 });
@@ -1033,7 +1055,7 @@ $(document).ready(function() {
                 $.activeitNoty({
                     type: 'danger',
                     icon: 'fa fa-check',
-                    message: '<?php echo translate('banner_unpublished!'); ?>',
+                    message: '<?php echo translate('Баннер не опубликован!'); ?>',
                     container: 'floating',
                     timer: 3000
                 });
@@ -1053,7 +1075,7 @@ $(document).ready(function() {
                 $.activeitNoty({
                     type: 'success',
                     icon: 'fa fa-check',
-                    message: '<?php echo translate('section_published!'); ?>',
+                    message: '<?php echo translate('Раздел опубликован!'); ?>',
                     container: 'floating',
                     timer: 3000
                 });
@@ -1062,7 +1084,7 @@ $(document).ready(function() {
                 $.activeitNoty({
                     type: 'danger',
                     icon: 'fa fa-check',
-                    message: '<?php echo translate('section_unpublished!'); ?>',
+                    message: '<?php echo translate('Раздел не опубликован!'); ?>',
                     container: 'floating',
                     timer: 3000
                 });
@@ -1082,7 +1104,7 @@ $(document).ready(function() {
                 $.activeitNoty({
                     type: 'success',
                     icon: 'fa fa-check',
-                    message: '<?php echo translate('section_published!'); ?>',
+                    message: '<?php echo translate('Раздел опубликован!'); ?>',
                     container: 'floating',
                     timer: 3000
                 });
@@ -1091,7 +1113,7 @@ $(document).ready(function() {
                 $.activeitNoty({
                     type: 'danger',
                     icon: 'fa fa-check',
-                    message: '<?php echo translate('section_unpublished!'); ?>',
+                    message: '<?php echo translate('Раздел не опубликован!'); ?>',
                     container: 'floating',
                     timer: 3000
                 });
@@ -1111,7 +1133,7 @@ $(document).ready(function() {
                 $.activeitNoty({
                     type: 'success',
                     icon: 'fa fa-check',
-                    message: '<?php echo translate('section_published!'); ?>',
+                    message: '<?php echo translate('Раздел опубликован!'); ?>',
                     container: 'floating',
                     timer: 3000
                 });
@@ -1120,7 +1142,7 @@ $(document).ready(function() {
                 $.activeitNoty({
                     type: 'danger',
                     icon: 'fa fa-check',
-                    message: '<?php echo translate('section_unpublished!'); ?>',
+                    message: '<?php echo translate('Раздел не опубликован!'); ?>',
                     container: 'floating',
                     timer: 3000
                 });

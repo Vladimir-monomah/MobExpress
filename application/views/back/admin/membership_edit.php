@@ -46,7 +46,7 @@
                     placeholder="<?php echo translate('Промежуток времени'); ?>" class="form-control required">
                 </div>
                 <div class="col-sm-2">
-                    <?php echo translate('days'); ?>
+                    <?php echo translate('Дни'); ?>
                 </div>
             </div>
             

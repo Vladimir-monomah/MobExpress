@@ -5,7 +5,7 @@
             $footer_category =  $this->db->get_where('general_settings',array('type' => 'footer_category'))->row()->value;
         ?>
         <div class="panel-heading">
-            <h3 class="panel-title"><?php echo translate('footer_settings');?></h3>
+            <h3 class="panel-title"><?php echo translate('Настройки нижнего колонтитула');?></h3>
         </div>
         <?php
             echo form_open(base_url() . 'admin/general_settings/footer', array(

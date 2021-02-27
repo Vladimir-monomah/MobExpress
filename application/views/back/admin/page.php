@@ -8,7 +8,7 @@
                     <div class="tab-content" style="">
                         <div class="col-md-12" style="border-bottom: 1px solid #ebebeb;padding: 5px;">
                             <button class="btn btn-primary btn-labeled fa fa-plus-circle add_pro_btn pull-right" 
-                                onclick="ajax_set_full('add','<?php echo translate('add_page'); ?>',
+                                onclick="ajax_set_full('add','<?php echo translate('Добавить страницу'); ?>',
 								'<?php echo translate('Успешно добавлен!'); ?>','page_add',''); proceed('to_list');">
 									<?php echo translate('Создать страницу');?>
                             			</button>

@@ -48,7 +48,7 @@
 	<div class="col-md-12">
 <div class="panel">
 <div class="panel-heading">
-    <h3 class="panel-title"><?php echo translate('select_logo');?></h3>
+    <h3 class="panel-title"><?php echo translate('Выбрать логотип');?></h3>
 </div>
 <?php
     $admin_login_logo = $this->db->get_where('ui_settings',array('type' => 'admin_login_logo'))->row()->value;
@@ -69,7 +69,7 @@
             
         <tbody>
             <tr>
-                <td><?php echo translate('admin_logo');?></td>
+                <td><?php echo translate('Логотип администратора');?></td>
                 <td>
                     <div class="inner-div tr-bg img-fixed">
                         <img class="img-responsive img-sm" src="<?php echo base_url(); ?>
@@ -85,7 +85,7 @@
                 </td>
             </tr>
             <tr>
-                <td><?php echo translate('homepage_header_logo');?></td>
+                <td><?php echo translate('Логотип заголовка домашней страницы');?></td>
                 <td>
                     <div class="inner-div tr-bg img-fixed">
                         <img class="img-responsive img-sm" src="<?php echo base_url(); ?>
@@ -101,7 +101,7 @@
                 </td>
             </tr>
             <tr>
-                <td><?php echo translate('homepage_footer_logo');?></td>
+                <td><?php echo translate('Логотип нижнего колонтитула домашней страницы');?></td>
                 <td>
                     <div class="inner-div tr-bg img-fixed">
                         <img class="img-responsive img-sm" src="<?php echo base_url(); ?>
@@ -161,7 +161,7 @@ $(document).ready(function() {
 						$.activeitNoty({
 							type: 'success',
 							icon : 'fa fa-check',
-							message : '<?php echo translate('successfully_logo_uploaded')?>',
+							message : '<?php echo translate('Логотип успешно загружен')?>',
 							container : 'floating',
 							timer : 3000
 						});

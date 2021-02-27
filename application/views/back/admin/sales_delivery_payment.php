@@ -40,7 +40,7 @@
                 if($payment_status !== ''){
             ?>
             <div class="form-group">
-                <label class="col-sm-4 control-label" for="demo-hor-3"><?php echo translate('payment_details'); ?></label>
+                <label class="col-sm-4 control-label" for="demo-hor-3"><?php echo translate('Детали оплаты'); ?></label>
                 <div class="col-sm-6">
                     <textarea name="payment_details" class="form-control" <?php if($payment_type == 'paypal' || 
                     $payment_type == 'stripe'){ ?>readonly<?php } ?> rows="10"><?php echo $payment_details; ?></textarea>

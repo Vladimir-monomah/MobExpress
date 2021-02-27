@@ -299,7 +299,7 @@
                 +'    <div class="col-sm-12">'
                 +'        <div class="col-sm-12 options margin-bottom-10"></div><br>'
                 +'        <div class="btn btn-mint btn-labeled fa fa-plus pull-right add_op">'
-                +'        <?php echo translate('add_options_for_choice');?></div>'
+                +'        <?php echo translate('Добавить варианты на выбор');?></div>'
                 +'    </div>'
             );
         } else if ($(this).val() == 'text' || $(this).val() == ''){

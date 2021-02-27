@@ -116,7 +116,7 @@
                                     <input type="hidden" class="this_brnd_row" value="<?php echo $product['product_no']; ?>">
                                 </div>
                                 <div class="col-sm-3" id="prod<?php echo $product['product_no']; ?>">
-                                    <label class="col-sm-5 control-label" for=""><?php echo translate('product');?></label>
+                                    <label class="col-sm-5 control-label" for=""><?php echo translate('Товар');?></label>
                                     <div class="col-sm-7" id="product<?php echo $product['product_no']; ?>">
                                         <?php
                                             $products = $this->db->get_where('product', 
@@ -462,32 +462,32 @@ template/back/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js">
             +'    </span>'
             +'    <div class="col-sm-3" id="quant'+co+'">'
             +'        <input type="hidden" class="product_no" name="product_no[]" value="'+co+'">'
-            +'        <label class="col-sm-5 control-label" for=""><?php echo translate('quantity');?></label>'
+            +'        <label class="col-sm-5 control-label" for=""><?php echo translate('Вопрос');?></label>'
             +'        <div class="col-sm-7">'
             +'            <input class="form-control required" type="number" name="quantity[]" placeholder="quantity" value="1">'
             +'        </div>'
             +'    </div>'
             +'    <div class="col-sm-3">'
-            +'        <label class="col-sm-5 control-label" for=""><?php echo translate('category');?></label>'
+            +'        <label class="col-sm-5 control-label" for=""><?php echo translate('Категория');?></label>'
             +'        <div class="col-sm-7" id="cat'+co+'">'
             +'            <?php echo $this->crud_model->select_html('category','category[]','category_name','add','demo-chosen-select required','','digital',NULL,'get_cat'); ?>'
             +'            <input type="hidden" class="this_row" value="'+co+'">'
             +'        </div>'
             +'    </div>'
             +'    <div class="col-sm-3" id="sub'+co+'" style="display:none;">'
-            +'        <label class="col-sm-5 control-label" for=""><?php echo translate('sub-category');?></label>'
+            +'        <label class="col-sm-5 control-label" for=""><?php echo translate('Подкатегория');?></label>'
             +'        <div class="col-sm-7" id="sub_cat'+co+'">'
             +'        </div>'
             +'        <input type="hidden" class="this_sub_row" value="'+co+'">'
             +'    </div>'
             +'    <div class="col-sm-3" id="brn'+co+'" style="display:none;">'
-            +'        <label class="col-sm-5 control-label" for=""><?php echo translate('brand');?></label>'
+            +'        <label class="col-sm-5 control-label" for=""><?php echo translate('Бренд');?></label>'
             +'        <div class="col-sm-7" id="brand'+co+'">'
             +'        </div>'
             +'        <input type="hidden" class="this_brnd_row" value="'+co+'">'
             +'    </div>'
             +'    <div class="col-sm-3" id="prod'+co+'" style="display:none;">'
-            +'        <label class="col-sm-5 control-label" for=""><?php echo translate('product');?></label>'
+            +'        <label class="col-sm-5 control-label" for=""><?php echo translate('Товар');?></label>'
             +'        <div class="col-sm-7" id="product'+co+'">'
             +'        </div>'
             +'    </div>'

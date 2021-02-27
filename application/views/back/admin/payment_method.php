@@ -166,7 +166,7 @@
                                 <!--Panel body-->
                                 <div class="panel-body">
                                     <div class="form-group">
-                                        <label class="col-sm-3 control-label"><?php echo translate('Rлюч продавца');?></label>
+                                        <label class="col-sm-3 control-label"><?php echo translate('Ключ продавца');?></label>
                                         <div class="col-sm-8">
                                             <input type="text" name="merchant_key" value="<?php echo $merchant_key; ?>" 
                                             class="form-control">

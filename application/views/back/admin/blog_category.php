@@ -9,9 +9,9 @@
 					<div style="border-bottom: 1px solid #ebebeb;padding: 25px 5px 5px 5px;"
                     	class="col-md-12" >
 						<button class="btn btn-primary btn-labeled fa fa-plus-circle pull-right mar-rgt" 
-                        	onclick="ajax_modal('add','<?php echo translate('add_blog_category'); ?>',
+                        	onclick="ajax_modal('add','<?php echo translate('Добавить блог категорий'); ?>',
 							'<?php echo translate('Успешно добавлен!'); ?>','blog_category_add','')">
-								<?php echo translate('create_blog_category');?>
+								<?php echo translate('Сreate_blog_category');?>
                                 	</button>
 					</div>
 					<br>

@@ -12,7 +12,7 @@
                 if($status !== ''){
             ?>
                 <div class="form-group">
-                    <label class="col-sm-4 control-label" for="demo-hor-1"><?php echo translate('payment_status'); ?></label>
+                    <label class="col-sm-4 control-label" for="demo-hor-1"><?php echo translate('Статус платежа'); ?></label>
                         <div class="col-sm-6">
                         <?php
                             if($method == 'cash'){

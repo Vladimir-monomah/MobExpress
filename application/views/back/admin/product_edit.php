@@ -43,7 +43,7 @@
                                 </div>
                             </div>
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-2"><?php echo translate('category');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-2"><?php echo translate('Категория');?></label>
                                 <div class="col-sm-6">
                                     <?php echo $this->crud_model->select_html
                                     ('category','category','category_name','edit','demo-chosen-select required',
@@ -152,7 +152,7 @@
                                 </label>
                                 <div class="col-sm-6">
                                     <input type="text" name="seo_title" value="<?php echo $row['seo_title']; ?>"
-                                           placeholder="<?php echo translate('Ex. Yamaha RT - Model 202')?>"
+                                           placeholder="<?php echo translate('Ex. Yamaha RT - Model 2021')?>"
                                            class="form-control required">
                                 </div>
                                 <div class="col-sm-2"></div>
@@ -557,7 +557,7 @@
         $("#more_additional_fields").append(''
             +'<div class="form-group">'
             +'    <div class="col-sm-4">'
-            +'        <input type="text" name="ad_field_names[]" class="form-control"  placeholder="<?php echo translate('field_name'); ?>">'
+            +'        <input type="text" name="ad_field_names[]" class="form-control"  placeholder="<?php echo translate('Название поля'); ?>">'
             +'    </div>'
             +'    <div class="col-sm-5">'
             +'        <textarea rows="9"  class="summernotes" data-height="100" data-name="ad_field_values[]"></textarea>'
@@ -577,7 +577,7 @@
         $("#more_additional_options").append(''
             +'<div class="form-group" data-no="'+co+'">'
             +'    <div class="col-sm-4">'
-            +'        <input type="text" name="op_title[]" class="form-control required"  placeholder="<?php echo translate('customer_input_title'); ?>">'
+            +'        <input type="text" name="op_title[]" class="form-control required"  placeholder="<?php echo translate('Заголовок ввода клиента'); ?>">'
             +'    </div>'
             +'    <div class="col-sm-5">'
             +'        <select class="demo-chosen-select op_type required" name="op_type[]" >'
@@ -606,7 +606,7 @@
                 +'    <div class="col-sm-12">'
                 +'        <div class="col-sm-12 options margin-bottom-10"></div><br>'
                 +'        <div class="btn btn-mint btn-labeled fa fa-plus pull-right add_op">'
-                +'        <?php echo translate('add_options_for_choice');?></div>'
+                +'        <?php echo translate('Добавить варианты на выбор');?></div>'
                 +'    </div>'
             );
         } else if ($(this).val() == 'text' || $(this).val() == ''){
@@ -621,7 +621,7 @@
         $(this).closest('.col-sm-12').find(".options").append(''
             +'    <div>'
             +'        <div class="col-sm-10">'
-            +'          <input type="text" name="op_set'+co+'[]" class="form-control required"  placeholder="<?php echo translate('option_name'); ?>">'
+            +'          <input type="text" name="op_set'+co+'[]" class="form-control required"  placeholder="<?php echo translate('Название опции'); ?>">'
             +'        </div>'
             +'        <div class="col-sm-2">'
             +'          <span class="remove_it_n rmon btn btn-danger btn-icon btn-circle icon-sm fa fa-times" onclick="delete_row(this)"></span>'

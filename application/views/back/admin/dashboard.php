@@ -220,7 +220,7 @@
 	var cost_txt = '<?php echo translate('Стоимость'); ?>(<?php echo currency('','def'); ?>)';
 	var value_txt = '<?php echo translate('Цена'); ?>(<?php echo currency('','def'); ?>)';
 	var loss_txt = '<?php echo translate('Убыток'); ?>(<?php echo currency('','def'); ?>)';
-	var pl_txt = '<?php echo translate('Выгода'); ?>/<?php echo translate('loss'); ?>(<?php echo currency('','def'); ?>)';
+	var pl_txt = '<?php echo translate('Выгода'); ?>/<?php echo translate('Потеря'); ?>(<?php echo currency('','def'); ?>)';
 
 	var sale_details = [
 	<?php

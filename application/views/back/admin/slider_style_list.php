@@ -13,7 +13,7 @@
                 <div class="panel-heading">
                     <div class="panel-control">
                         <div class="btn btn-info btn-labeled fa fa-play-circle player">
-                            <?php echo translate('play');?> <?php echo $row['name']; ?>
+                            <?php echo translate('Играть');?> <?php echo $row['name']; ?>
                         </div>
                         <div class="btn btn-success btn-labeled fa fa-thumbs-up style_chooser" 
                         data-id='<?php echo $row['slider_style_id']; ?>'>

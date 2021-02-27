@@ -21,7 +21,7 @@
                 ?>
             </div>
             <h4 class="text-lg text-overflow mar-no"><?php echo $row['name']?></h4>
-            <p class="text-sm"><?php echo translate('wallet_load');?></p>
+            <p class="text-sm"><?php echo translate('Загрузка кошелька');?></p>
             <div class="pad-ver btn-group">
                 <?php if($row['facebook'] != ''){ ?>
                     <a href="<?php echo $row['facebook'];?>" 

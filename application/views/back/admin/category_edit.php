@@ -25,7 +25,7 @@
                     <label class="col-sm-4 control-label" for="demo-hor-2"><?php echo translate('Баннер категории');?></label>
                     <div class="col-sm-6">
                         <span class="pull-left btn btn-default btn-file">
-                            <?php echo translate('select_category_banner');?>
+                            <?php echo translate('Выберите баннер категории');?>
                             <input type="file" name="img" id='imgInp' accept="image">
                         </span>
                         <br><br>

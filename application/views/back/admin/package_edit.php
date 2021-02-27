@@ -75,7 +75,7 @@
                 <div class="row">
                     <div class="col-md-11">
                         <span class="btn btn-purple btn-labeled fa fa-refresh pro_list_btn pull-right" 
-                              onclick="ajax_set_full('edit', '<?php echo translate('edit_package'); ?>', 
+                              onclick="ajax_set_full('edit', '<?php echo translate('Редактировать пакет'); ?>', 
                               '<?php echo translate('Успешно отредактирован!'); ?>', 'package_uploader_edit', 
                               '<?php echo $value->package_id; ?>')">
                                   <?php echo translate('Перезагрузить'); ?>

@@ -58,7 +58,7 @@
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label"></label>
                                         <div class="col-sm-6" style="color:#C00;">
-                                        	**<?php echo translate('N.B');?> : 
+                                        	**<?php echo translate('P.S.');?> : 
                                             <?php echo translate('Не Меняйте Переменные Типа');?> [[ ____ ]].
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@
 ?>
 <div class="panel">
     <div class="panel-heading">
-        <h3 class="panel-title"><?php echo translate('choose_background_theme'); ?></h3>
+        <h3 class="panel-title"><?php echo translate('Выбрать тему фона'); ?></h3>
     </div>
     <?php
         echo form_open(base_url() . 'admin/ui_settings/email_theme', array(

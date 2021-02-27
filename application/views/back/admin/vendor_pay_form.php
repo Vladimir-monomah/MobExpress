@@ -133,7 +133,7 @@
                         <?php } if($vp_set == 'ok'){ ?>
                         <option value="vp"><?php echo translate('voguePay'); ?></option>
                         <?php } if($bitcoin_set == 'ok'){ ?>
-                            <option value="bitcoin"><?php echo translate('bitcoin'); ?></option>
+                            <option value="bitcoin"><?php echo translate('Биткоин'); ?></option>
                         <?php } if($pum_set == 'ok'){?> 
                          <option value="pum"><?php echo translate('payUmoney'); ?></option>
                         <?php } ?> 
@@ -154,7 +154,7 @@
                 $.activeitNoty({
                     type: 'success',
                     icon : 'fa fa-check',
-                    message : '<?php echo translate('your_card_details_verified!'); ?>',
+                    message : '<?php echo translate('Данные вашей карты проверены!'); ?>',
                     container : 'floating',
                     timer : 3000
                 });

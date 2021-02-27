@@ -75,7 +75,7 @@
                                 	** Изменение <b>Валюты системы по умолчанию</b> потребует изменения всех 
 									<b>значений цены продукта</b> и цены <b>пакета поставщика.</b>
                                 </div>
-                            	<label class="col-sm-3 control-label"><?php echo translate('system_default_currency');?></label>
+                            	<label class="col-sm-3 control-label"><?php echo translate('Валюта системы по умолчанию');?></label>
                                 <div class="col-sm-6">
                                     <?php
 										$system_def_curr = $this->db->get_where('business_settings', array('type' => 'currency'))->
@@ -139,7 +139,7 @@
 									$symbol_format = $this->db->get_where('business_settings', array('type' => 
 									'symbol_format'))->row()->value;
 								?>
-                            	<label class="col-sm-3 control-label"><?php echo translate('symbol_format');?></label>
+                            	<label class="col-sm-3 control-label"><?php echo translate('Формат символа');?></label>
                                 <div class="col-sm-6">
                                     <select class="demo-chosen-select required" name="symbol_format">
                                     	<?php
@@ -245,7 +245,7 @@
 												}
                                                 if($row['currency_settings_id'] == $currency_id){
                                             ?>
-                                                (<?php echo translate('default'); ?>)
+                                                (<?php echo translate('Умолчание'); ?>)
                                             <?php
 												}
                                             ?>
@@ -330,7 +330,8 @@
                                             <input class='aiz_switchery' type="checkbox"
                                                 data-set='cur_set'
                                                     data-id='<?php echo $row['currency_settings_id']; ?>'
-                                                        data-tm='<?php echo translate('Опубликованная валюта'); ?>' 					                                            data-fm='<?php echo translate('currency_unpublished'); ?>'
+                                                        data-tm='<?php echo translate('Опубликованная валюта'); ?>' 					                                            
+														data-fm='<?php echo translate('Валюта не опубликована'); ?>'
                                                             <?php if($row['status'] == 'ok'){ ?>checked<?php } ?> />
                                             <?php
                                                 }

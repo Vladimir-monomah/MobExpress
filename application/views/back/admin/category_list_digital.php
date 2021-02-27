@@ -35,11 +35,11 @@
                	</td>
 				<td class="text-right">
 					<a class="btn btn-success btn-xs btn-labeled fa fa-wrench" data-toggle="tooltip" 
-                    	onclick="ajax_modal('edit','<?php echo translate('edit_category_(_digital_product_)'); ?>',
+                    	onclick="ajax_modal('edit','<?php echo translate('Изменить категорию (цифровой продукт)'); ?>',
 						'<?php echo translate('Успешно отредактирован!'); ?>','category_edit_digital',
 						'<?php echo $row['category_id']; ?>')" 
                         	data-original-title="Edit" data-container="body">
-                            	<?php echo translate('edit');?>
+                            	<?php echo translate('Редактировать');?>
                     </a>
 					<a onclick="delete_confirm('<?php echo $row['category_id']; ?>',
 					'<?php echo translate('Действительно хотите это удалить?'); ?>')" 
@@ -57,12 +57,12 @@
 	</div>
            
 	<div id='export-div'>
-		<h1 style="display:none;"><?php echo translate('category'); ?></h1>
+		<h1 style="display:none;"><?php echo translate('Категория'); ?></h1>
 		<table id="export-table" data-name='category' data-orientation='p' style="display:none;">
 				<thead>
 					<tr>
-						<th><?php echo translate('no');?></th>
-						<th><?php echo translate('name');?></th>
+						<th><?php echo translate('Id');?></th>
+						<th><?php echo translate('Название');?></th>
 					</tr>
 				</thead>
 					

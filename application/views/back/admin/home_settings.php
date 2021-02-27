@@ -3,7 +3,7 @@
 ?>
     <div class="panel">
         <div class="panel-heading">
-            <h3 class="panel-title"><?php echo translate('choose_home_page_style');?></h3>
+            <h3 class="panel-title"><?php echo translate('Выбрать стиль домашней страницы');?></h3>
         </div>
         <?php
             echo form_open(base_url() . 'admin/ui_settings/ui_home/update_home_page/', array(
@@ -33,7 +33,7 @@
                                 	<span>
                                     	<i class="fa fa-check"></i>
                                     </span>
-									<?php echo translate('home_page_style').' '.$value; ?> 
+									<?php echo translate('Стиль домашней страницы').' '.$value; ?> 
                                 </h3>
                             </div>
                          </div>
@@ -43,15 +43,16 @@
                 </div>
             </div>
             <div class="panel-footer text-right">
-                <span class="btn btn-info submitter enterer" data-ing='<?php echo translate('updating..'); ?>' data-msg='<?php echo translate('home_page_updated!'); ?>' onClick="check_style()">
-                    <?php echo translate('update_home_page');?>
+                <span class="btn btn-info submitter enterer" data-ing='<?php echo translate('Обновление..'); ?>' 
+                data-msg='<?php echo translate('Главная страница обновлена!'); ?>' onClick="check_style()">
+                    <?php echo translate('Обновить домашнюю страницу');?>
                 </span>
             </div>       
         </form>
     </div>
     <div class="panel">
         <div class="panel-heading">
-            <h3 class="panel-title"><?php echo translate('change_home_page_items');?></h3>
+            <h3 class="panel-title"><?php echo translate('Изменить элементы домашней страницы');?></h3>
         </div>
         <div id="home_item_set">
             

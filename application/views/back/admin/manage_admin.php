@@ -220,7 +220,7 @@
 						$.activeitNoty({
 							type: 'danger',
 							icon: 'fa fa-check',
-							message: '<?php echo translate('incorrect_password!'); ?>',
+							message: '<?php echo translate('Неверный пароль!'); ?>',
 							container: 'floating',
 							timer: 3000
 						});

@@ -24,7 +24,7 @@
             <td class="text-right">
                 <a class="btn btn-success btn-xs btn-labeled fa fa-wrench" data-toggle="tooltip" 
                     onclick="ajax_modal('default','<?php echo translate('Редактировать пакет поставщика'); ?>',
-                    '<?php echo translate('successfully_edited!'); ?>','membership_edit',0)" data-original-title="Edit" 
+                    '<?php echo translate('Успешно отредактирован!'); ?>','membership_edit',0)" data-original-title="Edit" 
                     data-container="body">
                         <?php echo translate('Редактировать');?>
                 </a>
@@ -67,13 +67,13 @@
 </div>
            
 <div id='export-div'>
-    <h1 style="display:none;"><?php echo translate('membership');?></h1>
+    <h1 style="display:none;"><?php echo translate('Членство');?></h1>
     <table id="export-table" data-name='membership' data-orientation='p' style="display:none;">
             <thead>
                 <tr>
-                    <th><?php echo translate('no');?></th>
-                    <th><?php echo translate('title');?></th>
-                    <th><?php echo translate('price');?></th>
+                    <th><?php echo translate('Id');?></th>
+                    <th><?php echo translate('Заголовок');?></th>
+                    <th><?php echo translate('Цена');?></th>
                 </tr>
             </thead>
                 

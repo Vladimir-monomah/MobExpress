@@ -35,7 +35,7 @@
 
                             <div class="form-group btm_border">
                                 <label class="col-sm-4 control-label" for="demo-hor-1">
-                                    <?php echo translate('product_title');?>
+                                    <?php echo translate('Название продукта');?>
                                         </label>
                                 <div class="col-sm-6">
                                     <input type="text" name="title" id="demo-hor-1" value="<?php echo $row['title']; ?>" 
@@ -153,7 +153,7 @@
 							?>
                             <input type="hidden" value="share" id="vdo_type">
                             <div class="form-group btm_border" id="shared_vdo">
-                                <label class="col-sm-4 control-label"><?php echo translate('video');?></label>
+                                <label class="col-sm-4 control-label"><?php echo translate('Видео');?></label>
                                 <div class="col-sm-6">
                                     <iframe controls="2" width="400" height="300" src="<?php echo $video[0]['video_src'];?>"
                                     frameborder="0">
@@ -172,7 +172,7 @@
                                         ('если вам нужно изменить это видео для вашего продукта, нажмите здесь ...');?></i>
                                     </h4>
                                     <div id="vdo_change_btn" class="btn btn-mint btn-labeled fa fa-plus pull-right">
-                                    	<?php echo translate('change_video');?>
+                                    	<?php echo translate('Изменить видео');?>
                                     </div>
                                 </div>
                             </div>
@@ -188,10 +188,11 @@
                             <div class="form-group btm_border" id="video_upload" style="display:none">
                                 <div class="form-group">
                                     <label class="col-sm-4 control-label">
-                                        <?php echo translate('upload_video');?>
+                                        <?php echo translate('Загрузить видео');?>
                                     </label>
                                     <div class="col-sm-6 abstract">
-                                        <span class="pull-left btn btn-default btn-file"> <?php echo translate('Выберите видео файл');?>
+                                        <span class="pull-left btn btn-default btn-file"> 
+                                        <?php echo translate('Выберите видео файл');?>
                                    			<input type="file" name="videoFile" class="videoInp" accept="video/*">
                                     	</span>
                                     </div>
@@ -208,7 +209,7 @@
                             <div class="form-group btm_border" id="video_share" style="display:none">
                                 <div class="form-group">
                                     <label class="col-sm-4 control-label">
-                                        <?php echo translate('choose_sharing_site');?>
+                                        <?php echo translate('Выберите сайт обмена');?>
                                     </label>
                                     <div class="col-sm-6 abstract">
                                         <select class="demo-chosen-select" name="site" id="site">
@@ -335,7 +336,7 @@
                         </div>
                         <div id="business_details" class="tab-pane fade">
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-6"><?php echo translate('sale_price');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-6"><?php echo translate('Цена продажи');?></label>
                                 <div class="col-sm-4">
                                     <input type="number" name="sale_price" id="demo-hor-6" min='0' step='.01' 
                                     value="<?php echo $row['sale_price']; ?>" 
@@ -354,7 +355,7 @@
                                 <span class="btn"><?php echo currency('','def'); ?></span>
                             </div>
                             <div class="form-group btm_border">
-                                <label class="col-sm-4 control-label" for="demo-hor-9"><?php echo translate('product_tax');?></label>
+                                <label class="col-sm-4 control-label" for="demo-hor-9"><?php echo translate('Налог');?></label>
                                 <div class="col-sm-4">
                                     <input type="number" name="tax" id="demo-hor-9" min='0' step='.01' 
                                     value="<?php echo $row['tax']; ?>" 
@@ -470,7 +471,7 @@
             </div>
             <div class="col-sm-12">
                 <button class="pull-right btn btn-danger removal">
-                    <?php echo translate('remove');?>
+                    <?php echo translate('Удалить');?>
                 </button>
             </div>
         </div>
@@ -494,7 +495,7 @@
 <div id="vdo_change_select_html" style="display:none;">
 	<div id="change_option_set">
     	<label class="col-sm-4 control-label">
-			<?php echo translate('video_options');?>
+			<?php echo translate('Параметры видео');?>
         </label>
         <div class="col-sm-6">
             <select class="demo-chosen-select_o" name="upload_method" onchange="video_change_sector(this.value)">
@@ -788,7 +789,7 @@
         $("#more_additional_fields").append(''
             +'<div class="form-group">'
             +'    <div class="col-sm-4">'
-            +'        <input type="text" name="ad_field_names[]" class="form-control"  placeholder="<?php echo translate('field_name'); ?>">'
+            +'        <input type="text" name="ad_field_names[]" class="form-control"  placeholder="<?php echo translate('Название поля'); ?>">'
             +'    </div>'
             +'    <div class="col-sm-5">'
             +'        <textarea rows="9"  class="summernotes" data-height="100" data-name="ad_field_values[]"></textarea>'

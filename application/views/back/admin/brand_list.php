@@ -58,13 +58,13 @@
 	</div>
            
 	<div id='export-div'>
-		<h1 style="display:none;"><?php echo translate('brand'); ?></h1>
+		<h1 style="display:none;"><?php echo translate('Бренд'); ?></h1>
 		<table id="export-table" data-name='brand' data-orientation='p' style="display:none;">
 				<thead>
 					<tr>
-						<th><?php echo translate('no');?></th>
-						<th><?php echo translate('name');?></th>
-						<th><?php echo translate('category');?></th>
+						<th><?php echo translate('Id');?></th>
+						<th><?php echo translate('Название');?></th>
+						<th><?php echo translate('Категория');?></th>
 					</tr>
 				</thead>
 					

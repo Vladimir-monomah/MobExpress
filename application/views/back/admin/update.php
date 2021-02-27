@@ -23,7 +23,7 @@
                     <?php } ?>
                     <div class="tab-pane fade active in" id="" style="border:1px solid #ebebeb; border-radius:4px;">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><?php echo translate('Update your script, Current version is');?>
+                            <h3 class="panel-title"><?php echo translate('Обновите свой скрипт. Текущая версия');?>
                                 <strong>
                                     <?php echo $this->db->get_where('general_settings',array('type'=>'version'))->row()->value; ?>
                                 </strong>

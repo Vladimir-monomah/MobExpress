@@ -67,7 +67,8 @@
                                 </div>
                                 <div class="panel-footer text-right">
                                     <span class="btn btn-success btn-labeled fa fa-check submitter enterer"  
-                                    data-ing='<?php echo translate('Сохранение'); ?>' data-msg='<?php echo translate($row.'_updated!'); ?>'>
+                                    data-ing='<?php echo translate('Сохранение'); ?>' 
+                                    data-msg='<?php echo translate($row.'_обновлено!'); ?>'>
                                         <?php echo translate('Сохранить');?>
                                     </span>
                                 </div>

@@ -91,7 +91,7 @@
         $("#more_additional_fields").append(''
             +'<div class="form-group">'
             +'    <div class="col-sm-4">'
-            +'        <input type="text" name="f_q[]" class="form-control"  placeholder="<?php echo translate('question'); ?>">'
+            +'        <input type="text" name="f_q[]" class="form-control"  placeholder="<?php echo translate('Вопрос'); ?>">'
             +'    </div>'
             +'    <div class="col-sm-6">'
             +'          <textarea rows="9"  class="summernotes" data-height="100" data-name="f_a[]"></textarea>'

@@ -54,7 +54,7 @@
 		</table>
 	</div>    
     <div id='export-div' style="padding:40px;">
-		<h1 id ='export-title' style="display:none;"><?php echo translate('product_stock'); ?></h1>
+		<h1 id ='export-title' style="display:none;"><?php echo translate('Товарный запас'); ?></h1>
 		<table id="export-table" class="table" data-name='product_stock' data-orientation='p' 
 		data-width='1500' style="display:none;">
 				<colgroup>

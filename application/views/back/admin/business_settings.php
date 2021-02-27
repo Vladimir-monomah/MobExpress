@@ -163,11 +163,11 @@
                                 <select name="shipping_cost_type" class="demo-cs-multiselect">
                                     <option value="product_wise" 
 										<?php if($sp_type == 'product_wise'){ echo 'selected'; } ?> >
-                                        	<?php echo translate('product_wise');?>
+                                        	<?php echo translate('Разумный');?>
                                     			</option>
                                     <option value="fixed" 
 										<?php if($sp_type == 'fixed'){ echo 'selected'; } ?> >
-                                        	<?php echo translate('fixed');?>
+                                        	<?php echo translate('Фиксированный');?>
                                             	</option>
                                 </select>
                             </div>
@@ -229,7 +229,8 @@
                     
                     <div class="panel-footer text-right">
                         <span class="btn btn-info submitter" 
-                        	data-ing='<?php echo translate('saving'); ?>' data-msg='<?php echo translate('настройки обновлены!'); ?>' >
+                        	data-ing='<?php echo translate('Сохранение'); ?>' 
+                            data-msg='<?php echo translate('настройки обновлены!'); ?>' >
 								<?php echo translate('Сохранить');?>
                         </span>
                     </div>

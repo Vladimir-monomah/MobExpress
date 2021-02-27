@@ -101,7 +101,7 @@
     </table>
 </div>
     <div id='export-div' style="padding:40px;">
-		<h1 id ='export-title' style="display:none;"><?php echo translate('sales'); ?></h1>
+		<h1 id ='export-title' style="display:none;"><?php echo translate('Продажи'); ?></h1>
 		<table id="export-table" class="table" data-name='sales' data-orientation='l' data-width='1500' style="display:none;">
 				<colgroup>
 					<col width="50">
@@ -113,10 +113,10 @@
 				<thead>
 					<tr>
                         <th>#</th>
-                        <th>Sale Code</th>
-                        <th>Buyer</th>
-                        <th>Date</th>
-                        <th>Total</th>
+                        <th>Код продажи</th>
+                        <th>Покупатель</th>
+                        <th>Дата</th>
+                        <th>Итог</th>
 					</tr>
 				</thead>
 

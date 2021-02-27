@@ -99,7 +99,7 @@
                 <div class="row">
                 	<div class="col-md-11">
                         <span class="btn btn-purple btn-labeled fa fa-refresh pro_list_btn pull-right" 
-                            onclick="ajax_set_full('add','<?php echo translate('add_blog'); ?>',
+                            onclick="ajax_set_full('add','<?php echo translate('Добавить блог'); ?>',
                             '<?php echo translate('Успешно добавлен!'); ?>','blog_add',''); "><?php echo translate('Перезагрузить');?>
                         </span>
                     </div>

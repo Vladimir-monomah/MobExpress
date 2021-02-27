@@ -8,7 +8,7 @@
 				<div class="tab-content">
 					<div class="col-md-12" style="border-bottom: 1px solid #ebebeb;padding:10px;">
 						<button class="btn btn-primary btn-labeled fa fa-plus-circle pull-right" 
-                        	onclick="ajax_modal('add','<?php echo translate('add_brand_(_physical_product_)'); ?>',
+                        	onclick="ajax_modal('add','<?php echo translate('Добавить бренд (физический продукт)'); ?>',
 							'<?php echo translate('Успешно добавлен!');?>','brand_add','')">
 								<?php echo translate('Создать бренд');?>
 						</button>

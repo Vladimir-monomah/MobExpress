@@ -78,7 +78,7 @@
 </div>
     <div id="vendr"></div>
     <div id='export-div' style="padding:40px;">
-		<h1 id ='export-title' style="display:none;"><?php echo translate('pay_to_vendor'); ?></h1>
+		<h1 id ='export-title' style="display:none;"><?php echo translate('Плата продавцу'); ?></h1>
 		<table id="export-table" class="table" data-name='membership_payments' data-orientation='p' 
         data-width='1500' style="display:none;">
 				<colgroup>

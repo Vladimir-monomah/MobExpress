@@ -13,7 +13,7 @@
                 	<?php echo translate('Заголовок');?>
                     	</label>
                 <div class="col-sm-6">
-                    <input type="text" name="title" placeholder="<?php echo translate('Заголовк'); ?>" 
+                    <input type="text" name="title" placeholder="<?php echo translate('Заголовок'); ?>" 
                     class="form-control required">
                 </div>
             </div>
