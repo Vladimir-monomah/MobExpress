@@ -8,35 +8,20 @@
 <section class="page-section">
     <div class="container">
         <div class="row mx-0 d-lg-flex">
-        	<div class="col-md-3 px-0">
-        		<div class="home-3-category d-flex align-items-center h-100" style="background-image: url('<?php echo $this->crud_model->file_view('category',$row['category'],'','','no','src','',''); ?>');">
-        			<div>
-	        			<h2><?php echo $this->crud_model->get_type_name_by_id('category',$row['category'],'category_name'); ?></h2>
-	        			<a href="<?php echo base_url(); ?>home/category/<?php echo $row['category']; ?>" class="btn"><?php echo translate('browse_all');?></a>
-        			</div>
-        		</div>
-        	</div>
+        	
             <div class="col-md-9 px-0">
                 <div class="tabs-wrapper content-tabs home3_category_box">
-                    <ul class="nav nav-tabs">
                         <?php
 						if(!empty($row['sub_category'])){
 							$i=0;
                         	$sub_categories=$row['sub_category'];
 							foreach($sub_categories as $row1){
 						?>
-                        <li class="<?php if($i==0){ echo 'active';}?>">
-                            <a href="#tab<?php echo $row1; ?>" data-toggle="tab">
-                                <?php echo $this->crud_model->get_type_name_by_id('sub_category',$row1,'sub_category_name'); ?>
-                            </a>
-                        </li>
                         <?php
                         	$i++;
 							}
 						}
 						?>
-                    </ul>
-                    <div class="tab-content">
                     	<?php
 						if(!empty($row['sub_category'])){
 							$j=0;
@@ -62,7 +47,6 @@
 							}
 						}
 						?>
-                    </div>
                 </div>
             </div>
         </div>
